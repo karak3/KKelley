@@ -7,6 +7,7 @@
 body 
 {
   background-color: #66ffff;
+  border-style: groove;
 }
 
 h1 
@@ -16,6 +17,7 @@ h1
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab; 
+  border-style: ridge;
  
 }
 h2
@@ -24,13 +26,13 @@ h2
     font-size: 40px;
     color: #ff99e6;
     text-align: center;
+    border-style: ridge;
 }
 p 
 {
   font-family: Imbue;
   font-size: 40px;
   font-color: black;
-  border-style: ridge;
 
 }
 
