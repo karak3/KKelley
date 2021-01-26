@@ -17,7 +17,6 @@ h1
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab; 
-  
 }
 h2
 {
@@ -25,16 +24,18 @@ h2
     font-size: 40px;
     color: #ff99e6;
     text-align: center;
+    border: 2px black;
     border-style: groove;
+    border width: content;
 }
 p 
 {
   font-family: Imbue;
-  font-size: 30px;
+  font-size: 25px;
   font-color: black;
 
 }
-a
+a:link, a:visited
 { 
     background-color: #cc0099;
     color: #66ffff;
