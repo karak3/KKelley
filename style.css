@@ -1,14 +1,13 @@
-<style>
-<head>
+<!-Font links from Google Fonts>
+{
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Imbue&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-</head>
-
-
+}
+{
 font-family: 'Imbue', serif;
 font-family: 'Satisfy', cursive;
 font-family: 'Shadows Into Light', cursive;
-
+}
 body 
 {
   background-color: #66ffff;
