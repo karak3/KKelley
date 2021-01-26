@@ -33,8 +33,11 @@ p
   font-color: black;
 
 }
+a
+{
 a:link, a:visited
-{ background-color: #cc0099;
+{
+ background-color: #cc0099;
     color: #66ffff;
     padding: 14px 25px;
     text-align: center;
