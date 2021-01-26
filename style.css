@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html>
 <head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Imbue&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -33,5 +34,10 @@ p
 }
 </style>
 </head>
+<body>
 
+<h1>Web Programming 1</h1>
+<p>This is a paragraph.</p>
 
+</body>
+</html>
