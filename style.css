@@ -1,12 +1,11 @@
 <!-Font links from Google Fonts>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
+</style>
 {
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Imbue&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-}
-{
-font-family: 'Imbue', serif;
-font-family: 'Satisfy', cursive;
-font-family: 'Shadows Into Light', cursive;
+    font-family: 'Imbue', serif;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
 }
 body 
 {
