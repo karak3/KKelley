@@ -25,19 +25,18 @@ h2
     font-size: 40px;
     color: #ff99e6;
     text-align: center;
+    border-style: groove;
 }
 p 
 {
   font-family: Imbue;
-  font-size: 40px;
+  font-size: 30px;
   font-color: black;
 
 }
 a
-{
-a:link, a:visited
-{
- background-color: #cc0099;
+{ 
+    background-color: #cc0099;
     color: #66ffff;
     padding: 14px 25px;
     text-align: center;
@@ -45,7 +44,8 @@ a:link, a:visited
     display: inline-block;
 }
 a:hover, a:active
-{ background-color: #ff99e6;
+{ 
+    background-color: #ff99e6;
 }
 
 </style>
