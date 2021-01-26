@@ -30,9 +30,8 @@ p
   font-family: Imbue;
   font-size: 40px;
   font-color: black;
-}
-p.groove {border-style: groove;
-p.ridge {border-style: ridge;
+  border-style: ridge;
+
 }
 
 </style>
