@@ -26,6 +26,10 @@ h2
     font-size: 40px;
     color: #ff99e6;
     text-align: center;
+    border: 2px black;
+    border-radius: 8px;
+    border-width: 10px;
+
 
 }
 p 
@@ -33,11 +37,6 @@ p
   font-family: Imbue;
   font-size: 40px;
   font-color: black;
-  p.round1
-  {
-      border: 2px #cc0099;
-      border-radius: 8px;
-  }
 
 }
 
