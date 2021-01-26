@@ -20,14 +20,14 @@ h1
 }
 h2
 {
-    font-family: 'Shadows Into Light Two';
+    font-family: 'Imbue';
     font-size: 30px;
     color: #ff99e6;
     text-align: center;
 }
 p 
 {
-  font-family: Imbue;
+  font-family: 'Imbue';
   font-size: 25px;
   font-color: black;
 
@@ -40,6 +40,9 @@ a:link, a:visited
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font: 'Shadows Into Light Two';
+    font-size: 20px;
+
 }
 a:hover, a:active
 { 
