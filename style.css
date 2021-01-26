@@ -16,7 +16,7 @@ h1
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab; 
-  border style: dotted
+ 
 }
 h2
 {
@@ -30,7 +30,9 @@ p
   font-family: Imbue;
   font-size: 40px;
   font-color: black;
-
+}
+p.groove {border-style: groove;
+p.ridge {border-style: ridge;
 }
 
 </style>
