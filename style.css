@@ -13,22 +13,22 @@ body
 h1 
 {
   font-family: 'Satisfy';
-  font-size: 60px;
+  font-size: 50px;
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab; 
 }
 h2
 {
-    font-family: 'Imbue';
-    font-size: 30px;
+    font-family: 'Shadows Into Light Two';
+    font-size: 20px;
     color: #ff99e6;
     text-align: center;
 }
 p 
 {
   font-family: 'Imbue';
-  font-size: 25px;
+  font-size: 20px;
   font-color: black;
 
 }
@@ -40,8 +40,7 @@ a:link, a:visited
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font: 'Shadows Into Light Two';
-    font-size: 20px;
+    font-family: 'Satisfy';
 
 }
 a:hover, a:active
