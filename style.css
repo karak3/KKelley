@@ -14,7 +14,8 @@ body
 {
   background-color: #66ffff;
 }
-
+</style>
+<style>
 h1 
 {
   font-family: Satisfy;
@@ -22,9 +23,9 @@ h1
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab;
-  
 }
-
+</style>
+<style>
 p 
 {
   font-family: Imbue;
