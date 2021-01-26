@@ -33,8 +33,11 @@ p
   font-family: Imbue;
   font-size: 40px;
   font-color: black;
-  border: 2px #cc0099;
-  border-radius: 5px;
+  p.round1
+  {
+      border: 2px #cc0099;
+      border-radius: 8px;
+  }
 
 }
 
