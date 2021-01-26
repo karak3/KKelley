@@ -1,10 +1,5 @@
 <!-Font links from Google Fonts>
 {
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
-</style>
-}
-{
     font-family: 'Imbue', serif;
     font-family: 'Satisfy', cursive;
     font-family: 'Shadows Into Light Two', cursive;
@@ -16,13 +11,19 @@ body
 
 h1 
 {
-  font-family: Satisfy;
+  font-family: 'Satisfy';
   font-size: 80px;
   color: #cc0099;
   text-align: center;
   text-shadow: 3px 3px 3px #ababab; 
 }
-
+h2
+{
+    font-family: 'Shadows Into Light Two';
+    font-size: 60px;
+    color: #ff99e6;
+    text-align: center;
+}
 p 
 {
   font-family: Imbue;
@@ -30,4 +31,5 @@ p
   font-color: black;
 
 }
+
 </style>
