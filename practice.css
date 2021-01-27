@@ -1,9 +1,19 @@
+/*Font links from Google Fonts*/
+/*Colors used 
+Background #b3ffff
+Heading/buttons #cc0099
+Sub-heading/link hover #ff99e6
+   */
+   {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Zilla Slab', serif;
+  }
 div {
-    font-family: Tahoma, Verdana sans-serif;
+    font-family: Zilla Slab;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     color: black;
-        ;
 }
 .container {
 	width: 100%;
@@ -16,14 +26,14 @@ div {
     height: 10%;
     padding:5px 10px;
     position: relative;
-    background-color: #659DBD;
+    background-color: black;
 }
 
 .nav {
     width: 100%;
     height: 10%;
     padding:5px 10px;
-    background:#c99;
+    background:#ff99e6;
 }
 .nav ul {
     margin:0;
@@ -43,7 +53,7 @@ div {
     color: white;
     margin-right: 2%;
     padding: 20px;
-    border: dashed thick blue;
+    border: dashed thick purple;
 }
 .right-wrapper {
 	width: 48%;
@@ -54,7 +64,7 @@ div {
 	position: absolute;
     background-color: rgba(0, 127, 0, 0.6);
     padding: 20px;
-    border: dashed thick green;
+    border: dashed thick purple;
 }
 .clear {
 	clear: both;
@@ -65,5 +75,5 @@ div {
     height: 10%;
     padding:5px 10px;
     position: relative;
-    background-color: #659DBD;
+    background-color: #b3ffff;
 }
