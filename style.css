@@ -7,6 +7,7 @@
 body 
 {
   background-color: #66ffff;
+  opacity: 0.3;
   border-style: groove;
 }
 
