@@ -9,14 +9,14 @@ div {
 	width: 100%;
     height: 100%;
     position: relative;
-    background-color: lightcoral;
+    background-color: #b3ffff;
 }
 .header {
 	width: 100%;
     height: 10%;
     padding:5px 10px;
     position: relative;
-    background-color: #659DBD);
+    background-color: #659DBD;
 }
 
 .nav {
