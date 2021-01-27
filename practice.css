@@ -60,7 +60,9 @@ div {
 	float: left;
 }
 .right {
-	height: 70%;
+    height: 70%;
+    width: 50%;
+    float: right;
 	position: absolute;
     background-color: rgba(0, 127, 0, 0.6);
     padding: 20px;
