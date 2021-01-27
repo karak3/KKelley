@@ -1,8 +1,8 @@
 <!-Font links from Google Fonts>
 {
-    font-family: 'Imbue', serif;
-    font-family: 'Satisfy', cursive;
-    font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Satisfy', cursive;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Zilla Slab', serif;
 }
 body 
 {
@@ -27,8 +27,8 @@ h2
 }
 p 
 {
-  font-family: 'Imbue';
-  font-size: 20px;
+  font-family: 'Zilla Slab';
+  font-size: 25px;
   font-color: black;
 
 }
