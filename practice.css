@@ -1,88 +1,68 @@
-/*Font links from Google Fonts*/
-/*Colors used 
-Background #b3ffff
-Heading/buttons #cc0099
-Sub-heading/link hover #ff99e6
-   */
-   {
-    font-family: 'Satisfy', cursive;
-    font-family: 'Shadows Into Light Two', cursive;
-    font-family: 'Zilla Slab', serif;
-  }
 div {
-    font-family: Zilla Slab;
+    font-family: Tahoma, Verdana sans-serif;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     color: black;
+        ;
 }
 .container {
 	width: 100%;
     height: 100%;
     position: relative;
-    background-color: gray;
+    background-color: lightcoral;
 }
 .header {
 	width: 100%;
     height: 10%;
     padding:5px 10px;
     position: relative;
-    background-color: turquoise;
-    font-family: 'Satisfy';
-    font-size: 50px;
-    color: #cc0099;
-    text-align: center;
-    text-shadow: 3px 3px 3px #ababab; 
+    background-color: #659DBD);
 }
 
 .nav {
     width: 100%;
     height: 10%;
     padding:5px 10px;
-    background:#ff99e6;
+    background:#c99;
 }
-a:link, a:visited
-{ 
-    background-color: #cc0099;
-    color: #66ffff;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Satisfy';
+.nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
 }
-a:hover, a:active
-{ 
-    background-color: #ff99e6;
+.nav li {
+    display:inline;
+    margin:0;
+    padding:0;
 }
 .left {
-	width: 30%;
+	width: 50%;
     height: 70%;
-	background-color: #b3ffff;
+	background-color: rgba(0, 0, 255, 0.6);
 	float: left;
-    color: black;
+    color: white;
     margin-right: 2%;
     padding: 20px;
-    border: dotted purple;
+    border: dashed thick blue;
 }
 .right-wrapper {
 	width: 48%;
 	float: left;
 }
 .right {
-    height: 70%;
+	height: 70%;
 	position: absolute;
-    background-color: #b3ffff;
+    background-color: rgba(0, 127, 0, 0.6);
     padding: 20px;
-    border: dotted purple;
+    border: dashed thick green;
 }
 .clear {
 	clear: both;
-	height: 10%;
+	height: 0;
 }
 .footer {
 	width: 100%;
     height: 10%;
     padding:5px 10px;
     position: relative;
-    background-color: turquoise;
-}
+    background-color: #659DBD);
