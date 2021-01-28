@@ -62,7 +62,7 @@ a:hover, a:active
     color: black;
     margin-right: 2%;
     padding: 20px;
-    border: dashed thick purple;
+    border: dotted purple;
 }
 .right-wrapper {
 	width: 48%;
@@ -73,11 +73,11 @@ a:hover, a:active
 	position: absolute;
     background-color: #b3ffff;
     padding: 20px;
-    border: dashed thick purple;
+    border: dotted purple;
 }
 .clear {
 	clear: both;
-	height: 0;
+	height: 10%;
 }
 .footer {
 	width: 100%;
