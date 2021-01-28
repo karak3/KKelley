@@ -1,0 +1,59 @@
+/*Font links from Google Fonts*/
+/*
+Colors used 
+Background #b3ffff (light blue)
+Heading/buttons #cc0099 (dark pink)
+Sub-heading/link hover #ff99e6 (light pink)
+*/
+
+   {
+    font-family: 'Satisfy', cursive;
+    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Zilla Slab', serif;
+  }
+  body 
+  {
+    background-color: #b3ffff;
+    border-style: groove;
+  }
+  
+  h1 
+  {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    color: #cc0099;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ababab; 
+  }
+  h2
+  {
+      font-family: 'Shadows Into Light Two';
+      font-size: 20px;
+      color: #ff99e6;
+      text-align: center;
+  }
+  p 
+  {
+    font-family: 'Zilla Slab';
+    font-size: 25px;
+    font-color: black;
+  
+  }
+  a:link, a:visited
+  { 
+      background-color: #cc0099;
+      color: #66ffff;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Satisfy';
+  
+  }
+  a:hover, a:active
+  { 
+      background-color: #ff99e6;
+  }
+  
+  </style>
+  
