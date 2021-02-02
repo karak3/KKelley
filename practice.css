@@ -1,66 +1,105 @@
+/*Font links from Google Fonts*/
+/*
+Colors used 
+Background #b3ffff (light blue)
+Heading/buttons #cc0099 (dark pink)
+Sub-heading/link hover #ff99e6 (light pink)
+*/
+
 {
     font-family: 'Satisfy', cursive;
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Zilla Slab', serif;
   }
-body { 
-    margin:50px; 
-     padding:20px; 
-     color:#000;
-     background:#b3ffff;}
- 
- #wrap {
-     width:760px;
-     margin:0 auto;
-     background:#6495ED;}
- 
- #header {
-     font-family: 'Shadows Into Light Two';
-     padding:5px 10px;
-     background:blue; 
-     color:#F0F8FF     
- }
- 
- #nav {
-     padding:10px 10px;
-     background:red;}
- #nav ul {
-     margin:10px;
-     padding:10px;
-     list-style:none;}
- 
- #nav li {
-     display:inline;
-     margin:0;
-     padding:10px;}
- 
- #main 
- {
-     float:left;
-     width:420px;
-     padding:15px;
-     background:orange;
-}
- 
- #sidebar 
- {
-     float:right;
-     width:230px;
-     height:430px;
-     padding:10px;
-     color: white;
-     background:yellow;
-}
- 
- #footer 
- {
-     text-align: center;
-     clear:both;
-     padding:5px 10px; 10px; 10px;
-     background: green;
-}
- 
- #footer p {
-     margin:0;}
- 
- 
+  body 
+  {
+    background-color: #b3ffff;
+  }
+  
+  h1 
+  {
+    font-family: 'Satisfy';
+    font-size: 50px;
+    color: #cc0099;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ababab; 
+  }
+  h2
+  {
+    margin-top: 0px;
+    margin-bottom: 0px;  
+    font-family: 'Shadows Into Light Two';
+      font-size: 20px;
+      color: #ff99e6;
+      text-align: center;
+  }
+  p 
+  {
+    font-family: 'Zilla Slab';
+    font-size: 25px;
+    font-color: black;
+  
+  }
+  #container
+  {
+      position: relative;
+      background-color: blue;
+      height: 600px;
+      width: 1000px;
+      margin-top: 0px;
+      margin-right: auto;
+      margin-bottom; 0px;
+      margin left: auto;
+      margin: 0px auto 0px auto;
+  }
+  #header
+  {
+      height: 40px;
+      background-color: red;
+      color: white;
+      text-align: center;
+  }
+  #left-div
+  {
+      float: left;
+      width: 63.5%;
+      height: 92%
+      padding: 1%
+      background-color: purple;
+  }
+  #right-div
+  {
+      float:right;
+      width: 32%;
+      height: 77%;
+      padding: 1%
+      background-color: purple;
+  }
+  #footer
+  {
+position: absolute;
+height: 20px;
+width: 100%;
+background-color: green;
+color: white;
+bottom: 0px;
+text-align: center;
+  }
+  a:link, a:visited
+  { 
+      background-color: #cc0099;
+      color: #66ffff;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: 'Satisfy';
+  
+  }
+  a:hover, a:active
+  { 
+      background-color: #ff99e6;
+  }
+  
+  </style>
+  
