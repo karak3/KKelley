@@ -14,6 +14,7 @@ Gray #c
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Zilla Slab', serif;
 }
+
 body {
     background-image: url(Images/BackgroundImage.jpg);
     background-size: 95%;
@@ -21,6 +22,7 @@ body {
     padding:0;
     color:#000;
     }
+
 p {
         font-family: 'Zilla Slab';
         font-size: 15px;
@@ -28,6 +30,7 @@ p {
         text-align: justify;
         padding: 5px;
     }
+
 h1 {
     margin: 0;
     font-family: 'Satisfy';
@@ -36,6 +39,7 @@ h1 {
     text-align: center;
     text-shadow: 3px 3px 3px #b3ffff; 
     }
+
 h2 {
     margin: 0;
     font-family: 'Shadows Into Light Two';
@@ -43,7 +47,11 @@ h2 {
     color: #ff99e6;
     text-align: center;
     }
-
+footer {
+    font-family: 'Shadows Into Light Two';
+    font-size: 15px;
+    color: #b3ffff;
+}
 #header {
     height: 80px;
     background-color: #999999;
@@ -95,9 +103,6 @@ h2 {
     background-color: #999999;
     border: 2px solid #cc0099;
     box-sizing: border-box;
-    font-family: 'Shadows Into Light Two';
-    font-size: 15px;
-    color: white;
     width: 100%;
     margin: 10px 10px 10px 10px;
     padding: 5px 10px 5px 10px; 
