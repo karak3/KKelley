@@ -74,7 +74,7 @@ footer {
 
 #left-div {
     float:left;
-    width: 500px;
+    width: 65%;
     height: 500px;
     background:#b3ffff;
     border: 3px solid black; 
@@ -87,7 +87,7 @@ footer {
 
 #right-div {
     float:right;
-    width: 200px;
+    width: 25%;
     height: 500px;
     background:#b3ffff;
     border: 3px solid black; 
