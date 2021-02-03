@@ -58,7 +58,7 @@ h2{
 
 #main {
     float:left;
-    width:480px;
+    width:70%;
     padding:10px;
     background:#b3ffff;
     border: black 2px; 
@@ -69,14 +69,14 @@ h2{
 #sidebar 
 {
     float:right;
-    width:230px;
+    width:30%;
     padding:10px;
     background:#00b3b3;
 }
 #footer {
     clear: both;
     background-color: #999999;
-    border: 6px solid black;
+    border: 2px solid #cc0099;
     color: white;
     padding: 5px 10px;
     box-sizing: border-box;
