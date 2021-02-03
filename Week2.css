@@ -50,11 +50,11 @@ h2 {
 footer{
   font-family: 'Shadows Into Light Two';
   font-size: 15px;
-}
+  }
   footer p {
   color: white;
   text-align: center;
-}
+  }
 #header {
   height: 80px;
   background-color: #999999;
@@ -111,11 +111,10 @@ footer{
   height: 40%;
   margin: 10px 10px 10px 10px;
   padding: 5px 10px 5px 10px; 
-
+}
 
 /*Link Styles*/
-a:link, a:visited
-  { 
+a:link, a:visited { 
     background-color: #cc0099;
     color: #66ffff;
     padding: 14px 25px;
