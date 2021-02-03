@@ -10,83 +10,89 @@ Sub-heading/link hover #ff99e6 (light pink)
     font-family: 'Satisfy', cursive;
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Zilla Slab', serif;
-  }
-  body 
-  {
-    background-color: #b3ffff;
-  }
-  
-  h1 
-  {
+}
+body, html {
+    margin:0;
+    padding:0;
+    color:#000;
+    background:#a7a09a;
+}
+
+#wrap {
+    width:750px;
+    margin:0 auto;
+    background:#99c;
+}
+
+#header {
+    padding:5px 10px;
+    background: black;
+}
+#nav {
+    padding:5px 10px;
+    background:#c99;
+}
+#nav ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#nav li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#main {
+    float:left;
+    width:480px;
+    padding:10px;
+    background:#b3ffff;
+    font-family: 'Zilla Slab';
+    font-size: 25px;
+    font-color: black;
+}
+#sidebar 
+{
+    float:right;
+    width:230px;
+    padding:10px;
+    background:#00b3b3;
+}
+#footer 
+{
+    clear:both;
+    padding:5px 10px;
+    background:black;
+    margin: 0;
+    font-family: 'Zilla Slab';
+    font-size: 15px'
+}
+
+h1 
+    {
+    margin:0;
     font-family: 'Satisfy';
     font-size: 50px;
     color: #cc0099;
     text-align: center;
     text-shadow: 3px 3px 3px #ababab; 
-  }
-  h2
-  {
-    margin-top: 0px;
-    margin-bottom: 0px;  
+    }
+h2 
+    {
+    margin:0 0 1em;
     font-family: 'Shadows Into Light Two';
-      font-size: 20px;
-      color: #ff99e6;
-      text-align: center;
-  }
-  p 
-  {
-    font-family: 'Zilla Slab';
-    font-size: 25px;
-    font-color: black;
-  
-  }
-  #container
-  {
-      position: relative;
-      background-color: blue;
-      height: 600px;
-      width: 1000px;
-      margin-top: 0px;
-      margin-right: auto;
-      margin-bottom; 0px;
-      margin left: auto;
-      margin: 0px auto 0px auto;
-  }
-  #header
-  {
-      height: 40px;
-      background-color: red;
-      color: white;
-      text-align: center;
-  }
-  #left-div
-  {
-      float: left;
-      width: 63.5%;
-      height: 92%
-      padding: 1%
-      background-color: purple;
-  }
-  #right-div
-  {
-      float:right;
-      width: 32%;
-      height: 77%;
-      padding: 1%
-      background-color: purple;
-  }
-  #footer
-  {
-position: absolute;
-height: 20px;
-width: 100%;
-background-color: green;
-color: white;
-bottom: 0px;
-text-align: center;
-  }
-  a:link, a:visited
-  { 
+    font-size: 20px;
+    color: #ff99e6;
+    text-align: center;
+    }
+p
+    {
+        font-family: 'Zilla Slab';
+        font-size: 25px;
+        font-color: black;
+    }
+a:link, a:visited
+    { 
       background-color: #cc0099;
       color: #66ffff;
       padding: 14px 25px;
@@ -94,12 +100,14 @@ text-align: center;
       text-decoration: none;
       display: inline-block;
       font-family: 'Satisfy';
-  
-  }
+    }
   a:hover, a:active
   { 
       background-color: #ff99e6;
   }
-  
-  </style>
-  
+
+
+
+
+
+/* ooh, this is a secret Easter Egg, with secret phrase "secret agent Carey" */
