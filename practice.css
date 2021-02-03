@@ -75,13 +75,17 @@ h2{
     background:#00b3b3;
 }
 #footer {
+    clear: both;
     background-color: #999999;
     border: 6px solid black;
     color: white;
-    padding: 15px;
+    padding: 5px 10px;
     box-sizing: border-box;
     font-family: 'Zilla Slab';
     font-size: 15px;
+}
+#footer p{
+    margin:0;
 }
 
 /*Link Styles*/
