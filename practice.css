@@ -24,12 +24,12 @@ body{
 p{
         font-family: 'Zilla Slab';
         font-size: 15px;
-        font-color: black;
+        color: black;
         text-align: justify;
         padding: 5px;
     }
 h1{
-    margin:0;
+    margin: 0;
     font-family: 'Satisfy';
     font-size: 50px;
     color: #cc0099;
@@ -39,14 +39,21 @@ h1{
     margin-bottom: 10px;
     }
 h2{
-    margin:0 0 1em;
+    margin: 0;
     font-family: 'Shadows Into Light Two';
     font-size: 30px;
     color: #ff99e6;
     text-align: center;
     }
-
+#container {
+    position: relative;
+    background-color: #b3ffff;
+    height: 600px;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+}
 #header {
+    height: 40px;
     background-color: #999999;
     border: 2px solid #cc0099;
     padding: 10px;
@@ -56,22 +63,28 @@ h2{
     background:black;
 }
 
-#main {
+#left-div {
     float:left;
-    width:70%;
-    padding:10px;
+    width:63.5%;
+    height: 92%;
+    padding: 1%;
     background:#b3ffff;
     border: black 2px; 
     font-family: 'Zilla Slab';
     font-size: 20px;
-    font-color: black;
+    color: black;
 }
-#sidebar 
+#right-div 
 {
     float:right;
-    width:25%;
-    padding:10px;
+    width: 32%;
+    height: 77%;
+    padding: 1%;
     background:#00b3b3;
+    border: black 2px; 
+    font-family: 'Zilla Slab';
+    font-size: 20px;
+    color: black;
 }
 #footer {
     clear: both;
