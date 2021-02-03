@@ -11,17 +11,19 @@ Sub-heading/link hover #ff99e6 (light pink)
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Zilla Slab', serif;
 }
-body, html {
+body, html 
+{
     margin:0;
     padding:0;
     color:#000;
-    background:#a7a09a;
+    background:red;
 }
 
-#wrap {
+#wrap 
+{
     width:750px;
     margin:0 auto;
-    background:#99c;
+    background: #b3ffff;
 }
 
 #header {
@@ -30,7 +32,8 @@ body, html {
 }
 #nav {
     padding:5px 10px;
-    background:#c99;
+    background:black;
+    align-items: center;
 }
 #nav ul {
     margin:0;
@@ -47,8 +50,9 @@ body, html {
     width:480px;
     padding:10px;
     background:#b3ffff;
+    border: black 2px; border-radius: 30%;
     font-family: 'Zilla Slab';
-    font-size: 25px;
+    font-size: 20px;
     font-color: black;
 }
 #sidebar 
@@ -81,7 +85,7 @@ h2
     {
     margin:0 0 1em;
     font-family: 'Shadows Into Light Two';
-    font-size: 20px;
+    font-size: 30px;
     color: #ff99e6;
     text-align: center;
     }
