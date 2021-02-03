@@ -48,13 +48,14 @@ h2{
     background-color: #b3ffff;
     height: 600px;
     width: 1000px;
-    margin: 0px auto 0px auto;
+    padding: 2px;
 }
 #header {
     height: 60px;
     background-color: #b3ffff;
     border: 2px solid #cc0099;
-    padding: 10px;
+    padding: 5px;
+    width: auto;
 }
 #nav {
     padding:5px 5px;
@@ -64,7 +65,7 @@ h2{
 
 #left-div {
     float:left;
-    width: 55%;
+    width: 60%;
     height: auto;
     padding: 1%;
     background:#00b3b3;
@@ -76,7 +77,7 @@ h2{
 #right-div 
 {
     float:right;
-    width: 25%;
+    width: 30%;
     height: auto%;
     padding: 1%;
     background:#00b3b3;
@@ -87,14 +88,15 @@ h2{
 }
 #footer {
     clear: both;
-    background-color: #b3ffff;
+    background-color: #999999;
     border: 2px solid #cc0099;
     color: white;
     padding: 5px 10px;
     box-sizing: border-box;
     font-family: 'Zilla Slab';
     font-size: 15px;
-    text-align: center;
+    align-content: center;
+    width:auto;
 }
 #footer p{
     margin:0;
