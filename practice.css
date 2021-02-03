@@ -13,7 +13,7 @@ Sub-heading/link hover #ff99e6 (light pink)
 }
 body
 {
-    background-image: url(/Images/Background\ Image.jpg);
+    background-image: url(Images/BackgroundImage.jpg);
     background-size: 50;
     background-position: center;
     margin:0;
