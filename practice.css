@@ -48,56 +48,44 @@ h2 {
     height: 80px;
     background-color: #999999;
     border: 2px solid #cc0099;
-    padding: 5px;
     width: 100%;
     position: relative; 
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px; 
 }
 
 #nav {
-    padding:5px 5px;
     background:black;
     text-align: center;
     width: 100%;
     position; relative;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px; 
 }
 
 #left-div {
     float:left;
     width: 55%;
     height: auto;
-    padding: 1%;
     background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 35px;
     color: black;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px; 
 }
 
 #right-div {
     float:right;
     width: 35%;
-    padding: 1%;
     background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 35px;
     color: black;
-   margin-right: 10px;
-   margin-left: 10px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px; 
 }
 
 #footer {
@@ -110,7 +98,8 @@ h2 {
     font-size: 15px;
     color: #b3ffff;
     width: 100%;
-    margin: 20px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 10px 5px 10px; 
 }
 
 
