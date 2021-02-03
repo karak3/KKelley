@@ -1,9 +1,12 @@
 /*Font links from Google Fonts*/
 /*
-Colors used 
-Background #b3ffff (light blue)
-Heading/buttons #cc0099 (dark pink)
-Sub-heading/link hover #ff99e6 (light pink)
+Colors used:
+Light Teal Blue #b3ffff (Background)
+Darker Teal Blue #00b3b3 
+Dark Pink #cc0099 (Heading/button background)
+Light Pink Sub-heading #ff99e6 (sub-heading-link hover)
+Gray #999999
+
 */
 
 {
@@ -11,42 +14,61 @@ Sub-heading/link hover #ff99e6 (light pink)
     font-family: 'Shadows Into Light Two', cursive;
     font-family: 'Zilla Slab', serif;
 }
-body
-{
+body{
     background-image: url(Images/BackgroundImage.jpg);
-    background-size: 50;
+    background-size: 50%;
     background-position: center;
     margin:0;
     padding:0;
     color:#000;
-}
-
-#wrap 
-{
-    width:750px;
-    margin:0 auto;
-    background: #b3ffff;
-}
+    }
+p{
+        font-family: 'Zilla Slab';
+        font-size: 15px;
+        font-color: black;
+        text-align: justify;
+        padding: 5px;
+    }
+h1{
+    margin:0;
+    font-family: 'Satisfy';
+    font-size: 50px;
+    color: #cc0099;
+    text-align: center;
+    text-shadow: 3px 3px 3px #ababab; 
+    margin-top: 8px;
+    margin-bottom: 15px;
+    }
+h2{
+    margin:0 0 1em;
+    font-family: 'Shadows Into Light Two';
+    font-size: 30px;
+    color: #ff99e6;
+    text-align: center;
+    }
 
 #header {
-    padding:5px 10px;
-    background: black;
+    background-color: #999999;
+    border: 6px solid black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#footer {
+    background-color: #999999;
+    border: 6px solid black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab';
+    font-size: 15px'
 }
 #nav {
     padding:5px 10px;
     background:black;
     align-items: center;
 }
-#nav ul {
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-#nav li {
-    display:inline;
-    margin:0;
-    padding:0;
-}
+
 #main {
     float:left;
     width:480px;
@@ -64,39 +86,9 @@ body
     padding:10px;
     background:#00b3b3;
 }
-#footer 
-{
-    clear:both;
-    padding:5px 10px;
-    background:black;
-    margin: 0;
-    font-family: 'Zilla Slab';
-    font-size: 15px'
-}
 
-h1 
-    {
-    margin:0;
-    font-family: 'Satisfy';
-    font-size: 50px;
-    color: #cc0099;
-    text-align: center;
-    text-shadow: 3px 3px 3px #ababab; 
-    }
-h2 
-    {
-    margin:0 0 1em;
-    font-family: 'Shadows Into Light Two';
-    font-size: 30px;
-    color: #ff99e6;
-    text-align: center;
-    }
-p
-    {
-        font-family: 'Zilla Slab';
-        font-size: 25px;
-        font-color: black;
-    }
+
+/*Link Styles*/
 a:link, a:visited
     { 
       background-color: #cc0099;
