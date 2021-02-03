@@ -47,10 +47,11 @@ h2 {
   color: #ff99e6;
   text-align: center;
   }
-footer {
+footer p {
   font-family: 'Shadows Into Light Two';
   font-size: 15px;
-  color: #b3ffff;
+  color: #white;
+  text-align: center;
 }
 #header {
   height: 80px;
@@ -108,7 +109,6 @@ footer {
   height: 40%;
   margin: 10px 10px 10px 10px;
   padding: 5px 10px 5px 10px; 
-}
 
 
 /*Link Styles*/
