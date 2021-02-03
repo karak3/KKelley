@@ -17,7 +17,6 @@ Gray #999999
 body{
     background-image: url(Images/BackgroundImage.jpg);
     background-size: 50%;
-    background-position: center;
     margin:0;
     padding:0;
     color:#000;
