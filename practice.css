@@ -16,7 +16,7 @@ Gray #999999
 }
 body{
     background-image: url(Images/BackgroundImage.jpg);
-    background-size: 50%;
+    background-size: 90%;
     margin:0;
     padding:0;
     color:#000;
@@ -53,7 +53,7 @@ h2{
     margin: 0px auto 0px auto;
 }
 #header {
-    height: 40px;
+    height: 60px;
     background-color: #999999;
     border: 2px solid #cc0099;
     padding: 10px;
@@ -61,15 +61,16 @@ h2{
 #nav {
     padding:5px 5px;
     background:black;
+    align-content: center;
 }
 
 #left-div {
     float:left;
-    width:63.5%;
+    width: 60%;
     height: 92%;
-    padding: 1%;
+    padding: 5%;
     background:#00b3b3;
-    border: black 2px; 
+    border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 20px;
     color: black;
@@ -77,11 +78,11 @@ h2{
 #right-div 
 {
     float:right;
-    width: 32%;
-    height: 77%;
-    padding: 1%;
+    width: 30%;
+    height: 92%;
+    padding: 5%;
     background:#00b3b3;
-    border: black 2px; 
+    border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 20px;
     color: black;
@@ -95,6 +96,7 @@ h2{
     box-sizing: border-box;
     font-family: 'Zilla Slab';
     font-size: 15px;
+    text-align: center;
 }
 #footer p{
     margin:0;
