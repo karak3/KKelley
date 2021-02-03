@@ -54,21 +54,21 @@ h2{
 }
 #header {
     height: 60px;
-    background-color: #999999;
+    background-color: #b3ffff;
     border: 2px solid #cc0099;
     padding: 10px;
 }
 #nav {
     padding:5px 5px;
     background:black;
-    align-content: center;
+    text-align: center;
 }
 
 #left-div {
     float:left;
-    width: 60%;
-    height: 92%;
-    padding: 5%;
+    width: 55%;
+    height: auto;
+    padding: 1%;
     background:#00b3b3;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
@@ -78,9 +78,9 @@ h2{
 #right-div 
 {
     float:right;
-    width: 30%;
-    height: 92%;
-    padding: 5%;
+    width: 25%;
+    height: auto%;
+    padding: 1%;
     background:#00b3b3;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
@@ -89,7 +89,7 @@ h2{
 }
 #footer {
     clear: both;
-    background-color: #999999;
+    background-color: #b3ffff;
     border: 2px solid #cc0099;
     color: white;
     padding: 5px 10px;
