@@ -50,15 +50,12 @@ h2 {
 
 footer {
   font-family: 'Shadows Into Light Two';
+  font-stretch: expanded;
   font-size: 15px;
   color: white;
   text-align: center;
   }
 
-footer p {
-  color: white;
-  text-align: center;
-  }
 
 #header {
   height: 80px;
