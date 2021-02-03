@@ -5,7 +5,7 @@ Light Teal Blue #b3ffff (Background)
 Darker Teal Blue #00b3b3 
 Dark Pink #cc0099 (Heading/button background)
 Light Pink Sub-heading #ff99e6 (sub-heading-link hover)
-Gray #999999
+Gray #c
 
 */
 
@@ -16,7 +16,7 @@ Gray #999999
 }
 body{
     background-image: url(Images/BackgroundImage.jpg);
-    background-size: 90%;
+    background-size: 95%;
     margin:0;
     padding:0;
     color:#000;
@@ -51,7 +51,7 @@ h2{
 }
 #header {
     height: 60px;
-    background-color: #b3ffff;
+    background-color: #999999;
     border: 2px solid #cc0099;
     padding: 5px;
     width: 80%;
@@ -68,7 +68,7 @@ h2{
     width: 60%;
     height: auto;
     padding: 1%;
-    background:#00b3b3;
+    background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 25px;
@@ -80,7 +80,7 @@ h2{
     float:right;
     width: 35%;
     padding: 1%;
-    background:#00b3b3;
+    background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
     font-size: 25px;
