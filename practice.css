@@ -51,7 +51,7 @@ h2 {
     padding: 5px;
     width: 100%;
     position: relative; 
-    margin: 10px;
+    margin: 20px;
 }
 
 #nav {
@@ -60,7 +60,7 @@ h2 {
     text-align: center;
     width: 100%;
     position; relative;
-    margin: 10px;
+    margin: 20px;
 }
 
 #left-div {
@@ -71,9 +71,9 @@ h2 {
     background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
-    font-size: 25px;
+    font-size: 35px;
     color: black;
-    margin: 10px;
+    margin: 20px;
 }
 
 #right-div {
@@ -83,9 +83,10 @@ h2 {
     background:#b3ffff;
     border: 3px solid black; 
     font-family: 'Zilla Slab';
-    font-size: 25px;
+    font-size: 35px;
     color: black;
-    margin: 10px;
+    margin: 20px;
+    align-content: center;
 }
 
 #footer {
@@ -96,10 +97,9 @@ h2 {
     box-sizing: border-box;
     font-family: 'Zilla Slab';
     font-size: 15px;
-    font-color: #b3ffff;
-    align-content: center;
+    color: #b3ffff;
     width: 100%;
-    margin: 10px;
+    margin: 20px;
 }
 
 
@@ -113,6 +113,7 @@ a:link, a:visited
       text-decoration: none;
       display: inline-block;
       font-family: 'Satisfy';
+      font-size: 15px;
     }
   a:hover, a:active
   { 
