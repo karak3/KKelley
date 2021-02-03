@@ -46,10 +46,8 @@ h2{
 #container {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 20px;
-    background-color: #b3ffff;
-    border:2px solid #cc0099;
     margin: 10px;
 }
 #header {
@@ -75,7 +73,7 @@ h2{
     font-family: 'Zilla Slab';
     font-size: 25px;
     color: black;
-    margin: 5px;
+    margin: 10px;
 }
 #right-div 
 {
@@ -87,7 +85,7 @@ h2{
     font-family: 'Zilla Slab';
     font-size: 25px;
     color: black;
-    margin: 5px;
+    margin: 10px;
 }
 #footer {
     clear: both;
