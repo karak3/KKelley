@@ -36,8 +36,8 @@ h1{
     color: #cc0099;
     text-align: center;
     text-shadow: 3px 3px 3px #ababab; 
-    margin-top: 8px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
 h2{
     margin:0 0 1em;
@@ -49,24 +49,12 @@ h2{
 
 #header {
     background-color: #999999;
-    border: 6px solid black;
-    color: white;
-    padding: 15px;
-    box-sizing: border-box;
-}
-#footer {
-    background-color: #999999;
-    border: 6px solid black;
-    color: white;
-    padding: 15px;
-    box-sizing: border-box;
-    font-family: 'Zilla Slab';
-    font-size: 15px'
+    border: 2px solid #cc0099;
+    padding: 10px;
 }
 #nav {
-    padding:5px 10px;
+    padding:5px 5px;
     background:black;
-    align-items: center;
 }
 
 #main {
@@ -74,7 +62,7 @@ h2{
     width:480px;
     padding:10px;
     background:#b3ffff;
-    border: black 2px; border-radius: 30%;
+    border: black 2px; 
     font-family: 'Zilla Slab';
     font-size: 20px;
     font-color: black;
@@ -86,7 +74,15 @@ h2{
     padding:10px;
     background:#00b3b3;
 }
-
+#footer {
+    background-color: #999999;
+    border: 6px solid black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab';
+    font-size: 15px;
+}
 
 /*Link Styles*/
 a:link, a:visited
