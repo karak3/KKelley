@@ -38,55 +38,56 @@ body {
   margin: 0;
 }
 
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 /* Side Navigation Bar */
-.menu {
-float: left;
-width: 20%;
-text-align: center;
+.sidebar {
+    margin: 0;
+    width: 200px;
+    background-color: #302138;
+    position: fixed;
+    height: 80%;
+    overflow: auto;
 }
 
 /*Side Navigation Bar - styling*/
-.menu a {
-    background-color: #302138;
+.sidebar a {
     display: block;
     color: white;
     font-family: 'Kaushan Script', sans-serif; 
-    padding: 8px;
-    margin-top: 7px;
-  }
+    padding: 16px;
+    text-decoration: none;
+}
 /* Active page */
-.menu a.active {
+.sidebar a.active {
     background-color: #04C5FF;
     color: white;
-  }
+}
 /* Links not active during hover */
-.menu a:hover:not(.active) {
+.sidebar a:hover:not(.active) {
     background-color: #EA9399;
     color: white;
-  }
-.container {
-  width: 80%;
-  margin: 0 auto;
-  border: solid;
-  border-color: #302138;
-  border-radius: 2px;
-  background-color: #F5F7F9;
-  }
-
-.main {
-    float: left; 
-    width: 60%;
-    padding: 20px 20px;
-
 }
 
-.right {
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    border: solid;
+    border-color: #302138;
+    border-radius: 2px;
+}
+
+.main {
+  float:left;
+  width: 60%;
+  padding:0 20px;
   background-color: #F5F7F9;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
-  text-align: center;
 }
 
 .footer {
@@ -96,7 +97,7 @@ text-align: center;
   margin-top: 7px;
   color: white;
   font-family: "Kaushan Script";
-  height: fixed;
+  height: auto;
 }
 
 .responsive{
@@ -110,12 +111,12 @@ text-align: center;
   }
 /* Mobile Landscape */ 
 @media only screen and (max-width: 768px) {
-  .menu {
+    .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
-  .menu a {
+  .sidebar a {
     float:left;
     }
   .header {
@@ -131,12 +132,12 @@ text-align: center;
   .menu, .main, .right {
     width:100%;
   }
-  .menu {
+  .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
-  .menu a {
+  .sidebar a {
     float:left;
     }
   .header img {
@@ -147,7 +148,7 @@ text-align: center;
     height: 100%;
     display: block;
   }
-  .main {
+  .content {
     width: 100%;
     margin-left: 0px;
   }
@@ -164,21 +165,20 @@ text-align: center;
 </div>
 </header>
 
+<div class='container'>
   <!--Menu Bar-->
-  <div class="menu">
+  <div class="sidebar">
     <a class="active" href="home">Home</a>
     <a href="#Link 1" href="#Link1">Link 1</a>
     <a href="#Link 2" href="#Link2">Link 2</a>    
   </div>
-  
-  <div class="container">
-<!--Content Section-->
-    <div class="main">
-      <h2>Welcome</h2>
-      <p>Company information</p>
-      <p>More information</p>
-    </div>
+  <!--Content Section-->
+  <div class="content">
+    <h2>Welcome</h2>
+    <p>Company information</p>
+    <p>More information</p>
   </div>
+</div>
 
 <div class="footer">
   © Kara Kelley
