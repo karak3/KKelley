@@ -15,16 +15,13 @@
 * {
   box-sizing: border-box;
 }
-body{
-    margin: 0;
-    font-family: Barlow;
+
 }
 .header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #6A537E;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
+
 .header h1{
   background-color: #6A537E;
   color: #04C5FF;
@@ -34,13 +31,32 @@ body{
   position: relative;
   top: 18px;
   left: 10px;
+  overflow: hidden;
+}
+h2{
+  color: #EA9399;
+  text-align: center;
+  font-family: 'Kaushan Script';
+  font-size: 40px;
+  position: relative;
+}
+p{
+  font-family: 'Barlow';
+  color: #6A537E;
+  font-size: 30px;
+  position: relative;
 }
 .footer {
-  background-color: #6A537E;
-  color: 304C5FF;
-  padding: 15px;
+  background-color: #EA9399;
+  color: #6A537E;
+  font-family: 'Kaushan Script';
+  padding: 10px;
   text-align: center;
   font-size: 15px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%
 }
 
 /* Navigation Bar */
@@ -52,10 +68,10 @@ body{
     color: white;
     font-family: 'Barlow', sans-serif; 
     position: fixed;
-    height: 100%;
+    height: 65%;
     overflow: auto;
 }
-/* Nnavigation Bar Links */
+/* Navigation Bar Links */
 .sidebar a {
     display: block;
     color: white;
@@ -64,7 +80,7 @@ body{
 }
 /* Active link */
 .sidebar a.active {
-    background-color: #6A537E;
+    background-color: #04C5FF;
     color: white;
 }
 /* Links not active during hover */
@@ -73,75 +89,118 @@ body{
     color: #302138;
 }
 
-/*Content. Value of margin-left should match sidebar's width*/ 
+/*Content section - Value of margin-left should match sidebar's width*/ 
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
 }
+.content {
+  float:left;
+  width:60%;
+  height: 90%;
+  padding:0 20px;
+  background-color:#F5F7F9; 
+  }
+/*Container - main content and sidebar */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  }
+/*Media Queries: rules for sizes*/
 
-/* Width <700px make sidebar into top bar*/
+/*Desktop breakpoint 1200px.?*/
+@media screen and (max-width:1200 px; min-width: 769px;)
+  
+}
+/* Landscape mode breakpoint 768px. 
+Changes: Nav bar stacks in center
+Big logo header*/
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
     }
-    .sidebar a {float:left;)}
-    div.content {margin-left: 0;)}
-}
+  
+    .sidebar a {float:left;}
+    div.content {margin-left: 0;}
+    }  
 
-/* Width <400px navigation bar vertical*/
+    .header {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+/* Portrait mode breakpoint 576px. 
+Changes: Nav bar stacks in center
+Small logo header*/
 @media screen and (max-width: 480px) {
   .sidebar a {
     text-align: center;
     float: none;
+    width: 100%;
   }
+  @media only screen and (max: width 576px) {
+  .menu, .main, .right {
+    width:100%;
+  }
+  .header a{
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
 }
 .content {
   float:left;
   width:60%;
+  height: 90%;
   padding:0 20px;
-  background-color:#04C5FF; opacity: 15%;
-}
-
-
-@media only screen and (max-width:620px) {
-  /* For mobile phones: */
-  .menu, .main, .right {
-    width:100%;
+  background-color:#F5F7F9; 
+  }
+/*Container - main content and sidebar */
+.container {
+  width: 80%;
+  margin: 0 auto;
   }
 }
 </style>
 </head>
 
+
+
+
+
+
 <!--START HTML section-->
-<body style="font-family:Barlow;color:#302138;">
+<head>
+  <title>Week 3</title>
+</head>
+<body>
+  <header>
 
-<div class="header">
-  <img src="Images/Logo.png" alt="Logo Placeholder"/>
-  <h1 align="center">Company Name</h1>
+  </header>
 
-</div>
-
-
+<div class="container">
 <!--Side Bar-->
 <div class="sidebar">
-    <a class="#active" href="#home">Home</a>
-    <a href="#Link 1" href="#Link1">Link 1</a>
-    <a href="#Link 2" href="#Link2">Link 2</a>    
+    <a class="active" href="ResponsiveDesign.html">Home</a>
+    <a href="#" href="#Link1">Link 1</a>
+    <a href="#" href="#Link2">Link 2</a>    
 </div>
-
 <!--Content-->
   <div class="content">
     <h2>Welcome</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Information about company</p>
   </div>
-
-
 </div>
 
-<div style="background-color:#EA9399;text-align:center;padding:10px;margin-top:7px;">© Kara Kelley</div>
+<!--Footer-->
+  <div class="footer">© Kara Kelley</div>
+</body>
+</div>
+
 
 </body>
 </html>
