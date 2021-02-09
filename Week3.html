@@ -46,7 +46,7 @@ body {
 
 
 /* Side Navigation Bar */
-.sidebar {
+.menu {
     margin: 0;
     width: 200px;
     background-color: #302138;
@@ -56,7 +56,7 @@ body {
 }
 
 /*Side Navigation Bar - styling*/
-.sidebar a {
+.menu a {
     display: block;
     color: white;
     font-family: 'Kaushan Script', sans-serif; 
@@ -64,17 +64,17 @@ body {
     text-decoration: none;
 }
 /* Active page */
-.sidebar a.active {
+.menu a.active {
     background-color: #04C5FF;
     color: white;
 }
 /* Links not active during hover */
-.sidebar a:hover:not(.active) {
+.menu a:hover:not(.active) {
     background-color: #EA9399;
     color: white;
 }
 
-.content {
+.main {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
@@ -111,12 +111,12 @@ body {
   }
 /* Mobile Landscape */ 
 @media only screen and (max-width: 768px) {
-    .sidebar {
+  .menu {
     width: 100%;
     height: auto;
     position: relative;
     }
-  .sidebar a {
+  .menu a {
     float:left;
     }
   .header {
@@ -132,12 +132,12 @@ body {
   .menu, .main, .right {
     width:100%;
   }
-  .sidebar {
+  .menu {
     width: 100%;
     height: auto;
     position: relative;
     }
-  .sidebar a {
+  .menu a {
     float:left;
     }
   .header img {
@@ -148,7 +148,7 @@ body {
     height: 100%;
     display: block;
   }
-  .content {
+  .main {
     width: 100%;
     margin-left: 0px;
   }
@@ -167,13 +167,13 @@ body {
 
 <div class='container'>
   <!--Menu Bar-->
-  <div class="sidebar">
+  <div class="menu">
     <a class="active" href="home">Home</a>
     <a href="#Link 1" href="#Link1">Link 1</a>
     <a href="#Link 2" href="#Link2">Link 2</a>    
   </div>
   <!--Content Section-->
-  <div class="content">
+  <div class="main">
     <h2>Welcome</h2>
     <p>Company information</p>
     <p>More information</p>
