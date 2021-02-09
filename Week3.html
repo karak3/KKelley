@@ -18,16 +18,23 @@
 }
 body{
     margin: 0;
-    font-family: Barlow;
+    font-family: 'Barlow';
 }
-.header {
+.bigheader {
   overflow: hidden;
+  width: 100%;
 }
 .header img {
-  margin: auto;
+  margin: 0;
 }
-.container {
+
+.smallheader {
+  overflow: hidden;
   width: 100%;
+}
+
+.container {
+  width: 80%;
   margin: 0 auto;
 }
 /* Side Navigation Bar */
@@ -71,7 +78,7 @@ body{
 
 .main {
   float:left;
-  width:60%;
+  width: 60%;
   padding:0 20px;
   background-color: #F5F7F9;
 }
@@ -87,7 +94,21 @@ body{
 
 /* Desktop Mode */
 @media screen and (max-width: 2560px) {
-  .sidebar {
+  .content {
+    margin-left: 0;
+    }
+  .smallheader {
+    display: none;
+    }
+  .bigheader {
+    margin-left: 0;
+    width: 100%;
+    height: 100px; 
+    }
+  }
+/* Mobile Landscape */ 
+@media screen and (max-width: 768px) {
+    .sidebar {
     width: 100%;
     height: auto;
     position: relative;
@@ -95,16 +116,14 @@ body{
   .sidebar a {
     float:left;
     }
-  .content {
+  .bigheader {
     margin-left: 0;
+    width: 100%;
+    height: 100px;
     }
-  }
-/* Mobile Landscape */ 
-@media screen and (max-width: 768px) {
-    .sidebar {
-      display: none;
+  .smallheader {
+    display: none;
     }
- 
 }
   /* Mobile Portrait */
 @media only screen and (max-width:576px) {
@@ -114,6 +133,14 @@ body{
   .sidebar {
     display: none;
   }
+  .bigheader {
+    display: none;
+  }
+  .smallheader {
+    width: 100%;
+    margin-left: 0;
+    height: 100px;
+  }
 }
 </style>
 </head>
@@ -122,6 +149,9 @@ body{
 <html>
 <div class="header">
   <img src="Images/BigHeader.jpg">
+</div>
+<div class="header2">
+  <img src="Images/SmallHeader.jpg"
 </div>
 
 <div class='container'>
