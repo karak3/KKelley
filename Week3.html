@@ -38,56 +38,55 @@ body {
   margin: 0;
 }
 
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-
-
 /* Side Navigation Bar */
 .menu {
-    margin: 0;
-    width: 200px;
-    background-color: #302138;
-    position: fixed;
-    height: 80%;
-    overflow: auto;
+float: left;
+width: 20%;
+text-align: center;
 }
 
 /*Side Navigation Bar - styling*/
 .menu a {
+    background-color: #302138;
     display: block;
     color: white;
     font-family: 'Kaushan Script', sans-serif; 
-    padding: 16px;
-    text-decoration: none;
-}
+    padding: 8px;
+    margin-top: 7px;
+  }
 /* Active page */
 .menu a.active {
     background-color: #04C5FF;
     color: white;
-}
+  }
 /* Links not active during hover */
 .menu a:hover:not(.active) {
     background-color: #EA9399;
     color: white;
-}
-
-.main {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-    border: solid;
-    border-color: #302138;
-    border-radius: 2px;
-}
-
-.main {
-  float:left;
-  width: 60%;
-  padding:0 20px;
+  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: solid;
+  border-color: #302138;
+  border-radius: 2px;
   background-color: #F5F7F9;
+  }
+
+.main {
+    float: left; 
+    width: 60%;
+    padding: 20px 20px;
+
+}
+
+.right {
+  background-color: #F5F7F9;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
 }
 
 .footer {
@@ -165,20 +164,21 @@ body {
 </div>
 </header>
 
-<div class='container'>
   <!--Menu Bar-->
   <div class="menu">
     <a class="active" href="home">Home</a>
     <a href="#Link 1" href="#Link1">Link 1</a>
     <a href="#Link 2" href="#Link2">Link 2</a>    
   </div>
-  <!--Content Section-->
-  <div class="main">
-    <h2>Welcome</h2>
-    <p>Company information</p>
-    <p>More information</p>
+  
+  <div class="container">
+<!--Content Section-->
+    <div class="main">
+      <h2>Welcome</h2>
+      <p>Company information</p>
+      <p>More information</p>
+    </div>
   </div>
-</div>
 
 <div class="footer">
   © Kara Kelley
