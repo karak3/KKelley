@@ -82,7 +82,6 @@ body {
     border-radius: 2px;
 }
 
-
 .main {
   float:left;
   width: 60%;
@@ -97,72 +96,72 @@ body {
   margin-top: 7px;
   color: white;
   font-family: "Kaushan Script";
+  height: auto;
 }
 
+.responsive{
+  width: 100%;
+  height: auto;
+  }
+
 /* Desktop Mode */
-@media screen and (max-width: 2560px) {
-  div.smallheader {
-    display: none;
-    }
-  div.bigheader {
+@media only screen and (max-width: 2560px) {
+  .bigheader {
     margin-left: 0;
     width: 100%;
-    height: 100px; 
+    height: 100px;
+    display: block;
     }
-  div.header img {
+  .header img {
     width: 100%
   }
   }
 /* Mobile Landscape */ 
-@media screen and (max-width: 768px) {
-    div.sidebar {
+@media only screen and (max-width: 768px) {
+    .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
-  div.sidebar a {
+  .sidebar a {
     float:left;
     }
-  div.header img {
+  .header img {
     width: 100%
   }
-  div.bigheader {
+  .bigheader {
     margin-left: 0;
     width: 100%;
     height: 100px;
+    display: block;
     }
-  div.smallheader {
-    display: none;
-    }
+
 }
   /* Mobile Portrait */
 @media only screen and (max-width:480px) {
   .menu, .main, .right {
     width:100%;
   }
-  div.sidebar {
+  .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
-  div.sidebar a {
+  .sidebar a {
     float:left;
     }
-  div.header img {
+  .header img {
     width: 100%
   }
-  div.bigheader {
-    display: none;
-  }
-  div.smallheader {
+  .smallheader {
     width: 100%;
-    margin-left: 0;
+    margin-left: 0px;
     height: 100%;
+    display: block;
   }
   .content {
     width: 100%;
-    float: left;
-    align-items: center;
+    margin-left: 0px;
   }
 }
 </style>
@@ -172,10 +171,10 @@ body {
 <html>
   <header>
 <div class="BigHeader">
-  <img src="Images/BigHeader.jpg">
+  <img src="Images/BigHeader.jpg" alt="BigHeader" class="responsive">
 </div>
 <div class="SmallHeader">
-  <img src="Images/SmallHeader.jpg"
+  <img src="Images/SmallHeader.jpg" alt="SmallHeader" class="responsive">"
 </div>
 </header>
 
