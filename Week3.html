@@ -37,14 +37,6 @@ body {
 .header img {
   margin: 0;
 }
-.header1 {
-  max-width: 480px;
-  height: auto;
-  overflow: hidden;
-}
-.header1 img {
-  margin: 0;
-}
 
 
 .container {
@@ -82,8 +74,6 @@ body {
     color: white;
 }
 
-
-
 .content {
     margin-left: 200px;
     padding: 1px 16px;
@@ -117,26 +107,17 @@ body {
 
 /* Desktop Mode */
 @media only screen and (max-width: 2560px) {
-  .content {
-    margin-left: 200px;
-    }
-  .header1 {
-    display: none;
-    }
+
   }
 /* Mobile Landscape */ 
 @media only screen and (max-width: 768px) {
-  .menu, .main, .right {
-    width: 100%
-    }
     .sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
   .sidebar a {
-    float: left;
-    display: inline;
+    float:left;
     }
   .header {
     margin-left: 0;
@@ -144,11 +125,8 @@ body {
     height: 100px;
     display: block;
     }
-  .header1 {
-    display: none;
-    }
-  }
 
+}
   /* Mobile Portrait */
 @media only screen and (max-width:480px) {
   .menu, .main, .right {
@@ -162,16 +140,17 @@ body {
   .sidebar a {
     float:left;
     }
-  .header1 img {
+  .header img {
     width: 100%}
-  .header1 {
+  .header {
     width: 100%;
     margin-left: 0px;
     height: 100%;
     display: block;
   }
-  .header {
-    display: none;
+  .content {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 </style>
@@ -182,10 +161,7 @@ body {
 
 <header>
 <div class="header">
-  <img src="Images/BigHeader.jpg" alt="BigHeader" class="responsive" media="width: auto">
-  </div>
-<div class="header1">
-  <img src="Images/SmallHeader.jpg" alt="Small Header" class="responsive" media="width: 480px">
+  <img src="Images/BigHeader.jpg" alt="BigHeader" class="responsive">
 </div>
 </header>
 
