@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--font links-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Barlow;
+}
+.header {
+
+}
+/* Menu Bar */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #302138;
+    color: #EA9399;
+    font-family: 'Barlow', sans-serif; 
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+/* Active page */
+.sidebar a.active {
+    background-color: #6A537E;
+    color: #302138;
+}
+/* Links not active during hover */
+.sidebar a:hover:not(.active) {
+    background-color: #EA9399;
+    color: #302138;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float:left;)
+    }
+    div.content {margin-left: 0;)
+    }
+}
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  background-color:#04C5FF; opacity: 15%;
+}
+
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<!--START HTML section-->
+<body style="font-family:Barlow;color:#302138;">
+
+<div style="background-color:#04C5FF; opacity: 15%; padding:15px; text-align:center;">
+  <h1>Company Name</h1>
+</div>
+
+<!--Menu Bar-->
+<div class="sidebar">
+    <a class="#" href="home">Home</a>
+    <a href="Link 1" href="Link1">Link 1</a>
+    <a href="Link 2" href="Link2">Link 2</a>    
+</div>
+  <div class="content">
+    <h2>Welcome</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  </div>
+
+
+</div>
+
+<div style="background-color:#EA9399;text-align:center;padding:10px;margin-top:7px;">© Kara Kelley</div>
+
+</body>
+</html>
