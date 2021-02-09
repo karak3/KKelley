@@ -2,27 +2,30 @@
 <html>
 <head>
 <!--font links-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Week 3</title>
+
 </head>
 <style>
-{
+/* Fonts 
     font-family: 'Barlow', sans-serif;
     font-family: 'Kaushan Script', cursive;
-}
+*/
+
 * {
   box-sizing: border-box;
 }
-body{
+body {
     margin: 0;
     font-family: 'Barlow';
 }
 .bigheader {
   overflow: hidden;
-  width: 100%;
+  width: 2560px;
 }
 .header img {
   margin: 0;
@@ -34,9 +37,11 @@ body{
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
+
+
 /* Side Navigation Bar */
 .sidebar {
     margin: 0;
@@ -94,13 +99,10 @@ body{
 
 /* Desktop Mode */
 @media screen and (max-width: 2560px) {
-  .content {
-    margin-left: 0;
-    }
-  .smallheader {
+  div.smallheader {
     display: none;
     }
-  .bigheader {
+  div.bigheader {
     margin-left: 0;
     width: 100%;
     height: 100px; 
@@ -108,20 +110,20 @@ body{
   }
 /* Mobile Landscape */ 
 @media screen and (max-width: 768px) {
-    .sidebar {
+    div.sidebar {
     width: 100%;
     height: auto;
     position: relative;
     }
-  .sidebar a {
+  div.sidebar a {
     float:left;
     }
-  .bigheader {
+  div.bigheader {
     margin-left: 0;
     width: 100%;
     height: 100px;
     }
-  .smallheader {
+  div.smallheader {
     display: none;
     }
 }
@@ -130,13 +132,18 @@ body{
   .menu, .main, .right {
     width:100%;
   }
-  .sidebar {
+  div.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+  div.sidebar a {
+    float:left;
+    }
+  div.bigheader {
     display: none;
   }
-  .bigheader {
-    display: none;
-  }
-  .smallheader {
+  div.smallheader {
     width: 100%;
     margin-left: 0;
     height: 100px;
@@ -147,10 +154,10 @@ body{
 
 <!--START HTML section-->
 <html>
-<div class="header">
+<div class="BigHeader">
   <img src="Images/BigHeader.jpg">
 </div>
-<div class="header2">
+<div class="SmallHeader">
   <img src="Images/SmallHeader.jpg"
 </div>
 
