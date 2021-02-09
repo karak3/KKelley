@@ -20,30 +20,43 @@ body{
     font-family: Barlow;
 }
 .header {
-
+  background-color: #6A537E;
+  color: #04C5FF;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Kaushan Script';
 }
-/* Menu Bar */
+.footer {
+  background-color: #6A537E;
+  color: 304C5FF;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* Navigation Bar */
 .sidebar {
     margin: 0;
     padding: 0;
     width: 200px;
     background-color: #302138;
-    color: #EA9399;
+    color: white;
     font-family: 'Barlow', sans-serif; 
     position: fixed;
     height: 100%;
     overflow: auto;
 }
+/* Nnavigation Bar Links */
 .sidebar a {
     display: block;
     color: black;
     padding: 16px;
     text-decoration: none;
 }
-/* Active page */
+/* Active link */
 .sidebar a.active {
     background-color: #6A537E;
-    color: #302138;
+    color: white;
 }
 /* Links not active during hover */
 .sidebar a:hover:not(.active) {
@@ -51,24 +64,31 @@ body{
     color: #302138;
 }
 
+/*Content. Value of margin-left should match sidebar's width*/ 
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
 }
 
+/* Width <700px make sidebar into top bar*/
 @media screen and (max-width: 700px) {
     .sidebar {
         width: 100%;
         height: auto;
         position: relative;
     }
-    .sidebar a {float:left;)
-    }
-    div.content {margin-left: 0;)
-    }
+    .sidebar a {float:left;)}
+    div.content {margin-left: 0;)}
 }
 
+/* Width <400px navigation bar vertical*/
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
 .main {
   float:left;
   width:60%;
@@ -89,16 +109,20 @@ div.content {
 <!--START HTML section-->
 <body style="font-family:Barlow;color:#302138;">
 
-<div style="background-color:#04C5FF; opacity: 15%; padding:15px; text-align:center;">
+<div class="header">
   <h1>Company Name</h1>
+  p align="center"><img src="Images/Logo.png alt="Logo Placeholder" style="width:100%; height: auto; max-width300px;"</p>
 </div>
 
-<!--Menu Bar-->
+
+<!--Side Bar-->
 <div class="sidebar">
-    <a class="#" href="home">Home</a>
-    <a href="Link 1" href="Link1">Link 1</a>
-    <a href="Link 2" href="Link2">Link 2</a>    
+    <a class="active" href="#home">Home</a>
+    <a href="Link 1" href="#Link1">Link 1</a>
+    <a href="Link 2" href="#Link2">Link 2</a>    
 </div>
+
+<!--Content-->
   <div class="content">
     <h2>Welcome</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
