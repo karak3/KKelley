@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--font links-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Week 3</title>
+</head>
+<style>
+{
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Barlow;
+}
+.header {
+  overflow: hidden;
+}
+.header img {
+  margin: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* Side Navigation Bar */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #302138;
+    position: fixed;
+    height: 80%;
+    overflow: auto;
+}
+/*Side Navigation Bar - styling*/
+.sidebar a {
+    display: block;
+    color: white;
+    font-family: 'Kaushan Script', sans-serif; 
+    padding: 16px;
+    text-decoration: none;
+}
+/* Active page */
+.sidebar a.active {
+    background-color: #04C5FF;
+    color: white;
+}
+/* Links not active during hover */
+.sidebar a:hover:not(.active) {
+    background-color: #EA9399;
+    color: white;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    border: solid;
+    border-color: #302138;
+    border-radius: 2px;
+}
+
+
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  background-color: #F5F7F9;
+}
+
+.footer {
+  background-color: #EA9399;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  color: white;
+  font-family: "Kaushan Script";
+}
+
+/* Desktop Mode */
+@media screen and (max-width: 2560px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+  .sidebar a {
+    float:left;
+    }
+  .content {
+    margin-left: 0;
+    }
+  }
+/* Mobile Landscape */ 
+@media screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+ 
+}
+  /* Mobile Portrait */
+@media only screen and (max-width:576px) {
+  .menu, .main, .right {
+    width:100%;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<!--START HTML section-->
+<html>
+<div class="header">
+  <img src="Images/BigHeader.jpg">
+</div>
+
+<div class='container'>
+  <!--Menu Bar-->
+  <div class="sidebar">
+    <a class="active" href="home">Home</a>
+    <a href="#Link 1" href="#Link1">Link 1</a>
+    <a href="#Link 2" href="#Link2">Link 2</a>    
+  </div>
+  <!--Content Section-->
+  <div class="content">
+    <h2>Welcome</h2>
+    <p>Company information</p>
+    <p>More information</p>
+  </div>
+</div>
+
+<div class="footer">
+  © Kara Kelley
+</div>
+
+</body>
+</html> 
