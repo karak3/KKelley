@@ -1,3 +1,7 @@
+<!--Questions/Issues: 
+Couldn't get pictures to hide/change. Tried with header and image in content box
+Links to stack
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +32,8 @@
 body {
     margin: 0;
     font-family: 'Barlow';
-}
+    background-color: rgba(4, 197, 255, 0.5);
+    }
 .header {
   overflow: hidden;
   width: 100%;
@@ -38,12 +43,10 @@ body {
   margin: 0;
 }
 
-
 .container {
   width: 90%;
   margin: 0 auto;
 }
-
 
 /* Side Navigation Bar */
 .sidebar {
@@ -59,13 +62,14 @@ body {
 .sidebar a {
     display: block;
     color: white;
-    font-family: 'Kaushan Script', sans-serif; 
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 20px; 
     padding: 16px;
     text-decoration: none;
 }
 /* Active page */
 .sidebar a.active {
-    background-color: #04C5FF;
+    background-color: #6A537E;
     color: white;
 }
 /* Links not active during hover */
@@ -73,7 +77,7 @@ body {
     background-color: #EA9399;
     color: white;
 }
-
+/*Content Box*/
 .content {
     margin-left: 200px;
     padding: 1px 16px;
@@ -81,13 +85,15 @@ body {
     border: solid;
     border-color: #302138;
     border-radius: 2px;
+    text-align: center;
+    background-color: #F5F7F9;
+    font-size: 30px;
+    font-family: 'Barlow';
 }
-
-.main {
-  float:left;
-  width: 60%;
-  padding:0 20px;
-  background-color: #F5F7F9;
+h2 {
+  font-family: 'Barlow';
+  font-size: 50px;
+  color: #302138;
 }
 
 .footer {
@@ -100,6 +106,7 @@ body {
   height: auto;
 }
 
+/*For Images*/
 .responsive{
   width: 100%;
   height: auto;
@@ -107,8 +114,13 @@ body {
 
 /* Desktop Mode */
 @media only screen and (max-width: 2560px) {
-
+  .sidebar {
+    width: 200px;
   }
+  .sidebar a {
+    font-size: 25px;
+  }
+}
 /* Mobile Landscape */ 
 @media only screen and (max-width: 768px) {
     .sidebar {
@@ -125,7 +137,10 @@ body {
     height: 100px;
     display: block;
     }
-
+.content {
+  margin: 0px;
+  font-size: 25px;
+  }
 }
   /* Mobile Portrait */
 @media only screen and (max-width:480px) {
@@ -145,18 +160,18 @@ body {
   .header {
     width: 100%;
     margin-left: 0px;
-    height: 100%;
     display: block;
   }
   .content {
     width: 100%;
-    margin-left: 0px;
+    margin: 0px;
+    font-size: 20px;
   }
 }
 </style>
 </head>
 
-<!--START HTML section-->
+<!--Start HTML section-->
 <html>
 
 <header>
