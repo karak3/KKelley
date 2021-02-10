@@ -120,6 +120,15 @@ h2 {
   .sidebar a {
     font-size: 25px;
   }
+  .header2 {
+    display: none;
+  }
+  .header {
+    margin-left: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+  }
 }
 /* Mobile Landscape */ 
 @media only screen and (max-width: 768px) {
@@ -131,12 +140,15 @@ h2 {
   .sidebar a {
     float:left;
     }
-  .header {
+  .header2 {
     margin-left: 0;
     width: 100%;
     height: 100px;
     display: block;
     }
+  .header {
+    display: none;
+  }
 .content {
   margin: 0px;
   font-size: 25px;
@@ -155,12 +167,14 @@ h2 {
   .sidebar a {
     float:left;
     }
-  .header img {
-    width: 100%}
-  .header {
+  .header2 {
     width: 100%;
     margin-left: 0px;
     display: block;
+    height: 100px;
+  }
+  .header {
+    display: none;
   }
   .content {
     width: 100%;
@@ -176,10 +190,14 @@ h2 {
 
 <header>
 <div class="header">
-  <img src="Images/BigHeader.jpg" alt="BigHeader" class="responsive">
+  <img src="Images/BigHeader.jpg" alt="Big Header" class="responsive">
+</div>
+<div class="header2">
+  <img src="Images/SmallHeader.jpg" alt="Small Header" class="responsive">
 </div>
 </header>
 
+<body>
 <div class='container'>
   <!--Menu Bar-->
   <div class="sidebar">
@@ -195,6 +213,7 @@ h2 {
     <p>More information</p>
   </div>
 </div>
+</body>
 
 <div class="footer">
   © Kara Kelley
