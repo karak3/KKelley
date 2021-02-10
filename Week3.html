@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!--Questions: Can't get images to hide/unhide - tried with header -->
 <html>
 <head>
 <!--font links-->
@@ -38,12 +40,10 @@ body {
   margin: 0;
 }
 
-
 .container {
   width: 90%;
   margin: 0 auto;
 }
-
 
 /* Side Navigation Bar */
 .sidebar {
@@ -73,7 +73,7 @@ body {
     background-color: #EA9399;
     color: white;
 }
-
+/*Content Box*/ 
 .content {
     margin-left: 200px;
     padding: 1px 16px;
@@ -81,14 +81,11 @@ body {
     border: solid;
     border-color: #302138;
     border-radius: 2px;
+    text-align: center;
+    background-color: #F5F7F9;
+
 }
 
-.main {
-  float:left;
-  width: 60%;
-  padding:0 20px;
-  background-color: #F5F7F9;
-}
 
 .footer {
   background-color: #EA9399;
@@ -100,6 +97,7 @@ body {
   height: auto;
 }
 
+/*For Images*/
 .responsive{
   width: 100%;
   height: auto;
@@ -125,13 +123,15 @@ body {
     height: 100px;
     display: block;
     }
-
+  .content {
+    margin: 0px;
+  }
 }
   /* Mobile Portrait */
 @media only screen and (max-width:480px) {
   .menu, .main, .right {
     width:100%;
-  }
+    }
   .sidebar {
     width: 100%;
     height: auto;
@@ -150,7 +150,7 @@ body {
   }
   .content {
     width: 100%;
-    margin-left: 0px;
+    margin: 0px;
   }
 }
 </style>
