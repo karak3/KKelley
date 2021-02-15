@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week 4</title>
+        <link href="Practice.css" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Shadows+Into+Light+Two&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/javascript">
+  
+    //Naming the variable//  
+       var variable_1, variable_2, variable_3;
+   
+   //Defining the variables//
+       variable_1 = Number(prompt("How are you feeling today? Enter 1 for Happy. Enter 2 for Sad."));
+   //Variable 1 is the input from the user. The box will ask the user how they feel today.//
+       variable_2 = -1;
+   //Variable 2 is -1. This could be any number, it would just change the if/else statement for variable 3//
+       variable_3 = (variable_1 + variable_2 + 1)
+   //Variable 3 is adding the first two variables and 1. Like variable 2, the addend could be any number//
+       
+    //First if/else statement//
+    //(If) If the user inputs the number 1 for happy, the background will turn yellow and a message will appear.//
+    //(Else if) If the user inputs the number 2 for sad, the background will turn blue and a different message will appear.//
+    //(Else) If the user inputs any other value, the background will be gray and a 3rd message will appear.//
+       if (variable_1 == 1)
+           { document.write("<h1>May your happiness continue</h1>");
+            document.write("<body 							bgcolor='#ffff80'>");
+           }
+       else if (variable_1 == 2)
+            { document.write("<h1>I hope you have a 			better day!</h1>");
+            document.write("<body 				bgcolor='#ccf2ff'>");
+           }
+       else {
+           document.write("<h1>That wasn't a choice!		</h1>");
+           document.write("<body 				bgcolor='#F0F0F0'>");
+           }
+   //Second if/else statement//
+   //(If) When variable 3 is less than 3 one message will appear//
+   //(Else) When variable 3 is more than 3 a different message will appear.//
+   //I have the value set so that the same message shows when a user enters 1 for happy or 2 for sad. A different message will appear if they enter any other nunmber.//
+       if (variable_3 < 3) 
+           {document.write("<h2>Thank you for participating!				</h2>");}
+       else {document.write("<h2>Please try again</h2>");}
+       </script>     
+    </head>
+
+<body>
+<div> 
+    <center>
+        <a href="index.html" target='_blank'>Home</a>
+        <a href="Week0.html" target='_blank'>Week 0</a>
+        <a href="Week1.html" target='_blank'>Week 1</a>
+        <a href="Week2.html" target='_blank'>Week 2</a>
+        <a href="Week3.html" target='_blank'>Week 3</a>
+        <a href="Week4.html" target='_blank'>Week 4</a>
+    </center>
+    </div>
+</body>
+</html>
