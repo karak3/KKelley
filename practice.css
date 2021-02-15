@@ -6,6 +6,8 @@
 
 body {
     text-align: center;
+    margin: 0 auto;
+    float: left;
 }
 h1 {
     font-family: 'Satisfy';
