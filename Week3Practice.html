@@ -233,3 +233,210 @@ h2 {
 
 </body>
 </html> 
+
+
+
+<!--Questions/Issues: 
+Couldn't get pictures to hide/change. Tried with header and image in content box
+Links to stack
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<!--font links-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Week 3</title>
+
+</head>
+<style>
+/* Fonts 
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Kaushan Script', cursive;
+    Colors
+      White - F5F7F9
+      Peach - EA9399
+      Blue - 04C5FF
+      Purple - 6A537E
+      Dark purple - 302138
+*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Barlow';
+    background-color: rgba(4, 197, 255, 0.5); 
+}
+.header {
+  overflow: hidden;
+  width: 100%;
+  max-width: 2560px;
+}
+.header img {
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Side Navigation Bar */
+.sidebar {
+    margin: 0;
+    width: 200px;
+    background-color: #302138;
+    position: fixed;
+    height: 80%;
+    overflow: auto;
+}
+
+/*Side Navigation Bar - styling*/
+.sidebar a {
+    display: block;
+    color: white;
+    font-family: 'Kaushan Script', sans-serif; 
+    font-size: 20px;
+    padding: 16px;
+    text-decoration: none;
+}
+/* Active page */
+.sidebar a.active {
+    background-color: #6A537E;
+    color: white;
+}
+/* Links not active during hover */
+.sidebar a:hover:not(.active) {
+    background-color: #EA9399;
+    color: white;
+}
+/*Content Box*/ 
+.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+    border: solid;
+    border-color: #302138;
+    border-radius: 2px;
+    text-align: center;
+    background-color: #F5F7F9;
+    font-size: 30px;
+    font-family: 'Barlow';
+  }
+h2 {
+  font-family: 'Barlow';
+  font-size: 50px;
+  color: #302138;
+}
+
+.footer {
+  background-color: #EA9399;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  color: white;
+  font-family: "Kaushan Script";
+  height: auto;
+}
+
+/*For Images*/
+.responsive{
+  width: 100%;
+  height: auto;
+  }
+
+/* Desktop Mode */
+@media only screen and (max-width: 2560px) {
+  .sidebar {
+    width: 200px;
+  }
+  .sidebar a {
+    font-size: 25px;
+  }
+}
+/* Mobile Landscape */ 
+@media only screen and (max-width: 768px) {
+    .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+  .sidebar a {
+    float:left;
+    }
+  .header {
+    margin-left: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+    }
+  .content {
+    margin: 0px;
+    font-size: 25px;
+  }
+}
+  /* Mobile Portrait */
+@media only screen and (max-width:480px) {
+  .menu, .main, .right {
+    width:100%;
+    }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    }
+  .sidebar a {
+    float:left;
+    }
+  .header img {
+    width: 100%}
+  .header {
+    width: 100%;
+    margin-left: 0px;
+    display: block;
+  }
+  .content {
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+  }
+}
+</style>
+</head>
+
+<!--Start HTML section-->
+<html>
+
+<header>
+<div class="header">
+  <img src="Images/BigHeader.jpg" alt="BigHeader" class="responsive">
+</div>
+</header>
+
+<div class='container'>
+  <!--Menu Bar-->
+  <div class="sidebar">
+    <a class="active" href="index.html">Home</a>
+    <a href="#Link 1" href="#Link1">Link 1</a>
+    <a href="#Link 2" href="#Link2">Link 2</a>    
+  </div>
+  <!--Content Section-->
+  <div class="content">
+    <h2>Welcome</h2>
+    <img src="Images/Image.png" alt="Picture Placeholder" class="responsive">
+    <p>Company information</p>
+    <p>More information</p>
+  </div>
+</div>
+
+<div class="footer">
+  © Kara Kelley
+</div>
+
+</body>
+</html>
