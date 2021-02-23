@@ -14,7 +14,7 @@ font-family: 'Petit Formal Script', cursive;
 body {
     background-image: url("Images/Week5Background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
@@ -63,7 +63,7 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
     font-family: 'Petit Formal Script';
-    font-size: 20px;
+    font-size: 15px;
   }
 a:hover, a:active
 { 
@@ -74,13 +74,11 @@ a:hover, a:active
     background-color: white;
     border: 6px solid #ffdd3e;
     color: #0c2f39;
-    padding: 10px;
     box-sizing: border-box;
 }
 
 div {
     background-color: white;
-    padding: 15px;
     margin: auto;
     width: 90%;
 }
@@ -91,7 +89,7 @@ div {
 .box {
     float: left;
     width: 33.33%;
-    padding: 20px;
+    padding: 10px;
     background-color: white;
     box-sizing: border-box;
     height: auto;
