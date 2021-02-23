@@ -40,12 +40,12 @@ h1 {
     font-weight: bolder;
     color: #61abe8;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
-#nav {
-    background:black;
+.nav {
+    font-family: 'Petit Formal Script';
     text-align: center;
     width: 100%;
     position: relative; 
@@ -74,7 +74,7 @@ a:hover, a:active
     background-color: white;
     border: 6x solid #ffdd3e;
     color: 0c2f39;
-    padding: 15px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
