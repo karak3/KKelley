@@ -7,19 +7,19 @@ font-family: 'Petit Formal Script', cursive;
 }
 
 body {
-    background-image: url("/Images/Week5Background.jpg");
+    background-image: url("Images/Week5Background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 200px;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Arvo';
-    font-size: 40px;
+    font-family: 'Graduate';
+    font-size: 30px;
 }
 
 p {
 font-family: 'Arvo';
-font-size: 30px;
+font-size: 25px;
 color: black;
 
 }
@@ -29,6 +29,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+    height: auto;
     font-family: 'Petit Formal Script';
     font-size: 50px;
     color: white;
