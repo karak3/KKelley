@@ -34,7 +34,7 @@ h1 {
 
 .header {
     background-color: white;
-    border: 6px solid #ffdd3e;
+    border: 3px solid #ffdd3e;
     font-family: 'Petit Formal Script';
     font-size: 60px;
     font-weight: bolder;
@@ -72,9 +72,10 @@ a:hover, a:active
 
 .footer {
     background-color: white;
-    border: 6px solid #ffdd3e;
+    border: 3px solid #ffdd3e;
     color: #0c2f39;
     box-sizing: border-box;
+    align-content: center;
 }
 
 div {
@@ -94,6 +95,7 @@ div {
     box-sizing: border-box;
     height: auto;
     border: 2px solid #0c2f39;
+    align-items: center;
 }
 .clearfix::after {
     content: "";

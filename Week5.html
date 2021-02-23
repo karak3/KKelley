@@ -10,6 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Graduate&family=Petit+Formal+Script&display=swap" rel="stylesheet">
 <!--Link to Google fonts--> 
 
+<script>
+    /*Button commands - Text for schools will be displayed when the button is clicked. All data taken from school webpages*/
+function myFunction1(){
+    document.getElementById("LCMA").innerHTML = "LCMA is an International Baccalaureate Middle Years Programme School which offers students opportunities to develop their potential, explore their own learning preferences, take appropriate risks, and reflect on and develop a strong sense of personal identity. We want every student who has the privilege to call themselves an LCMA Knight, to head to High School knowing they have the skills necessary to become an advocate for themselves and take an active role in their academic pursuits. We take great pride in the fact that we are able to equip our students with the knowledge and skills necessary to achieve their goals, no matter what their dreams may be.";
+    }
+function myFunction1(){
+    document.getElementById("BA").innerHTML = "We now are known as a school of Leadership, Citizenship, and Service.  Elementary students in K-5 will be involved in weekly character education lessons and will focus on the 7 Caring Habits (grades K-3) and/or the Leader in Me 7 Habits of Happy Kids (grades 4-5). Incoming sixth graders will take a semester leadership course as an elective class and will complete a book study on Stephen Covey’s 7 Habits of Highly Effective Teens.  Homeroom classes will also participate in a year-long school or community service project."
+    }
+    function myFunction1(){
+    document.getElementById("RSA").innerHTML = "While many schools in Lakeland offer a STEM program (Science, Technology, Engineering, and Math), at Rochelle, we deeply believe in the advantages of an arts education and therefore we offer a STEAM program, where we focus on Science, Technology, Engineering, Arts and Math.  Our students develop rich skills in communication, collaboration, creativity and critical thinking through many facets of public presentation both academically and artistically and are adept with using state of the art digital equipment in the process.";
+    }
+</script>
+
+</script>
 </head>
 
 
@@ -19,21 +33,28 @@
     School Choice
 </div>
 <div class="clearfix">
+    <h1>Learn More About the Schools</h1>
     <div class="box">
-        <img src="Images/LCMALogo.png" width="150px">
+        <img src="Images/LCMALogo.png" width="150px" alt="Logo for Lawton Chiles Middle Academy">
         <h1>Lawton Chiles Middle Academy</h1>
-        <p>INSERT BUTTON FOR INFO</p>
+        <p id="LCMA"></p>
+        <button type="button" onclick="myFunction1()">Click to learn more about Lawton Chiles Middle Academy</button>
     </div>
+
     <div class="box">
-        <img src="Images/BALogo.png" width="150px">
+        <img src="Images/BALogo.png" width="150px" alt="Logo for Blake Academy">
         <h1>Blake Academy</h1>
-        <p>INSERT BUTTON FOR INFO</p>
+        <p id="BA"></p> 
+        <button type="button" onclick="myFunction2()">Click to learn more about Blake Academy</button>
     </div>
+
     <div class="box">
-        <img src="Images/RSALogo.jpg" width="150px">
+        <img src="Images/RSALogo.jpg" width="150px" alt="Logo for Rochelle School of the Arts">
         <h1>Rochelle School of the Arts</h1>
-        <p>INSERT BUTTON FOR INFO</p>
+        <p id="RSA"></p> 
+        <button type="button" onclick="myFunction3()">Click to learn more about Rochelle School of the Arts</button>
     </div>
+    
 </div>
 
 <div class="footer">
