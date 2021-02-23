@@ -1,4 +1,9 @@
 /*Fonts from Google*/
+/* Colors: 
+Yellow: #ffdd3e
+Blue: #61abe8
+Navy Blue: #0c2f39
+*/
 
 {
 font-family: 'Arvo', serif;
@@ -9,16 +14,59 @@ font-family: 'Petit Formal Script', cursive;
 body {
     background-image: url("Images/Week5Background.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
-    margin-right: 200px;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Graduate';
-    font-size: 30px;
+    background-size: 50%;
 }
 
 p {
 font-family: 'Arvo';
 font-size: 25px;
-color: black;
+color: #0c2f39;
+text-align: justify
+}
+
+h1 {
+    font-family: 'Graduate';
+    font-size: 35px;
+    color: #61abe8;
+}
+
+.header {
+    background-color: white;
+    border: 6x solid #ffdd3e;
+    font-family: 'Petit Formal Script';
+    font-size: 50px;
+    color: #0c2f39;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: white;
+    border: 6x solid #ffdd3e;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+div {
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    width: 90%;
+}
+
+
+/* Box model used from Melissa's page*/
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    conent: "";
+    clear: both;
+    display: table;
 }
