@@ -12,6 +12,7 @@ body {
     background-position: right top;
     margin-right: 200px;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 p {
@@ -26,6 +27,7 @@ header {
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;
+    background-size: auto;
     font-family: 'Graduate';
     font-size: 50px;
     text-align: center;
