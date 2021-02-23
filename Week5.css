@@ -15,19 +15,20 @@ body {
     background-image: url("Images/Week5Background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-attachment: fixed;
     background-position: center;
 }
 
 p {
 font-family: 'Arvo';
-font-size: 25px;
+font-size: 20px;
 color: #0c2f39;
 text-align: justify
 }
 
 h1 {
     font-family: 'Graduate';
-    font-size: 35px;
+    font-size: 25px;
     color: #61abe8;
 }
 
@@ -35,8 +36,10 @@ h1 {
     background-color: white;
     border: 6px solid #ffdd3e;
     font-family: 'Petit Formal Script';
-    font-size: 50px;
-    color: #0c2f39;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #61abe8;
+    text-align: center;
     padding: 15px;
     box-sizing: border-box;
 }
@@ -46,15 +49,15 @@ h1 {
     text-align: center;
     width: 100%;
     position: relative; 
-    border: 2px solid #cc0099;
+    border: 2px solid #ffdd3e;
     margin: 10px 10px 10px 10px;
     padding: 5px 10px 5px 10px; 
   }
-  
+
 /*Link Styles*/
 a:link, a:visited { 
-    background-color: #cc0099;
-    color: #66ffff;
+    background-color: #0c2f39;
+    color: #61abe8;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -64,13 +67,13 @@ a:link, a:visited {
   }
 a:hover, a:active
 { 
-    background-color: #ff99e6;
+    background-color: #ffdd3e;
 }
 
 .footer {
     background-color: white;
     border: 6x solid #ffdd3e;
-    color: white;
+    color: 0c2f39;
     padding: 15px;
     box-sizing: border-box;
 }
@@ -94,7 +97,7 @@ div {
     height: auto;
 }
 .clearfix::after {
-    conent: "";
+    content: "";
     clear: both;
     display: table;
 }
