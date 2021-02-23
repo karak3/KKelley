@@ -97,6 +97,7 @@ div {
     height: auto;
     border: 2px solid #0c2f39;
     align-content: center;
+    text-align: center;
 }
 .box2 {
     float: left;
@@ -107,6 +108,7 @@ div {
     height: auto;
     border: 2px solid #0c2f39;
     align-content: center;
+    text-align: center;
 }
 .box3 {
     float: left;
@@ -117,6 +119,7 @@ div {
     height: auto;
     border: 2px solid #0c2f39;
     align-content: center;
+    text-align: center;
 }
 .clearfix::after {
     content: "";
