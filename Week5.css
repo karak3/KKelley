@@ -14,7 +14,8 @@ font-family: 'Petit Formal Script', cursive;
 body {
     background-image: url("Images/Week5Background.jpg");
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: 100%;
+    background-position: center;
 }
 
 p {
