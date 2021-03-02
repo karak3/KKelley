@@ -2,7 +2,7 @@
 /* Colors: 
 Dark blue: #003d60
 Teal blue: #00aab7
-Green: #b8ccc6
+Yellow: #f9de59
 White: #f1ece9
 Tan: #f9e3be
 */
@@ -23,9 +23,10 @@ Tan: #f9e3be
     
     p {
     font-family: 'Poppins';
-    font-size: 14px;
+    font-size: 20px;
     color: #003d60;
-    text-align: justify
+    text-align: justify;
+    padding: 10px;
     }
     
     h1 {
@@ -37,12 +38,12 @@ Tan: #f9e3be
     h2 {
         font-family: 'Handlee';
         font-size: 25px;
-        color: #b8ccc6;
+        color: #f9de59;
         text-align: center;  
     }
     
     #header {
-        background-color: #f1ece9;
+        background-color: #f9e3be;
         border: 3px solid #003d60;
         font-family: 'Fredoka One';
         font-size: 60px;
@@ -56,7 +57,7 @@ Tan: #f9e3be
     /*Link Styles*/
     a:link, a:visited { 
         background-color: #003d60;
-        color: #00aab7;
+        color: #f9de59;
         padding: 10px 10px;
         text-align: center;
         text-decoration: none;
@@ -66,13 +67,13 @@ Tan: #f9e3be
       }
     a:hover, a:active
     { 
-        background-color: #f9e3be;
+        background-color: #00aab7;
     }
     
     #footer {
-        background-color: #f1ece9;
+        background-color: #f9e3be;
         border: 3px solid #003d60;
-        color: #0c2f39;
+        color: #003d60;
         box-sizing: border-box;
         text-align: center;
         padding: 10px;
@@ -85,6 +86,7 @@ Tan: #f9e3be
         background-color: #f1ece9;
         margin: auto;
         width: 90%;
+        border: 3px solid #003d60;
     }
     
     
