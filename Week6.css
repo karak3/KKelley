@@ -1,0 +1,145 @@
+/*Fonts from Google*/
+/* Colors: 
+Dark blue: #003d60
+Teal blue: #00aab7
+Green: #b8ccc6
+White: #f1ece9
+Tan: #f9e3be
+*/
+
+{
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Handlee', cursive;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background-image: url("Images/Week6Background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    p {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #003d60;
+    text-align: justify
+    }
+    
+    h1 {
+        font-family: 'Handlee';
+        font-size: 50px;
+        color: #00aab7;
+        text-align: center;
+    }
+    h2 {
+        font-family: 'Handlee';
+        font-size: 25px;
+        color: #b8ccc6;
+        text-align: center;  
+    }
+    
+    #header {
+        background-color: #f1ece9;
+        border: 3px solid #003d60;
+        font-family: 'Fredoka One';
+        font-size: 60px;
+        font-weight: bolder;
+        color: #00aab7;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    /*Link Styles*/
+    a:link, a:visited { 
+        background-color: #003d60;
+        color: #00aab7;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Handlee';
+        font-size: 15px;
+      }
+    a:hover, a:active
+    { 
+        background-color: #f9e3be;
+    }
+    
+    #footer {
+        background-color: #f1ece9;
+        border: 3px solid #003d60;
+        color: #0c2f39;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    /*Styling for box backgrounds*/
+    
+    div {
+        background-color: #f1ece9;
+        margin: auto;
+        width: 90%;
+    }
+    
+    
+    /* Box model used from Melissa's page*/
+
+    /*1st school*/
+    .box1 {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color: #f1ece9;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+     /*2nd school*/
+    .box2 {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color: #f1ece9;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+     /*3rd school*/
+    .box3 {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color: #f1ece9;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+
+     /*Wait List Form*/
+    .box4 {
+        width: 50%;
+        padding: 10px;
+        background-color: #f1ece9;
+        box-sizing: border-box;
+        height: auto;
+        border: 2px solid #0c2f39;
+        align-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /*Keeps things within boxes without overflowing*/
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
