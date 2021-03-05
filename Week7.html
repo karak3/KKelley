@@ -21,10 +21,6 @@
         this.climate = climate;
         this.area = area;
 
-        this.density = function () {
-            return this.population / this.area;
-        }
-
         this.writeCountry = function ()
         {
             var str = "This country is located in " + this.continent + ". " +
@@ -32,7 +28,7 @@
             "The capital is " + this.capital + ". " +
             "The climate is " + this.climate + ". "+
             "The area is " + this.area + " square miles.";
-            writeText (str, "textArea");
+            writeText (str, "textArea",);
         }
 
     };
@@ -41,10 +37,23 @@ function writeText(txt, destination){
     document.getElementById(destination).innerHTML=txt;
 }
 
+/*Code for submit answer check http://jsfiddle.net/WTVxu/*/ 
 function myFunction()
 {
     var a=document.getElementById("text_a").value;
-    if (a=="Ireland")
+    if (a == "Ireland")
+    {
+        document.getElementById("answer").innerText="You are correct!";
+    }
+    else
+    {
+        document.getElementById("answer").innerHTML="Oops! Try Again."
+    }
+}
+function myFunction()
+{
+    var b=document.getElementById("text_b").value;
+    if (b=="Thailand")
     {
         document.getElementById("answer").innerText="You are correct!";
     }
@@ -54,8 +63,8 @@ function myFunction()
     }
 }
 
-var country1 = new country("Ireland", "Europe", 6572728, "Dublin", "Temperate Oceanic", 27133);
-var country2 = new country("Kyrgystan", "Asia", 6457000, "Bishkek", "Arid Continental", 77182);
+var country1 = new country("Ireland", "Europe", 6572728, "Dublin", "Temperate", 27133);
+var country2 = new country("Thailand", "Asia", 6963000, "Bangkok", "Tropical", 198117);
 var country3 = new country();
 
 </script>
@@ -75,51 +84,48 @@ Countries
         Guess the country
     </h1>
 
-    <div class="box1">
+    <div class="box4">
         <h2>Click the button for information about the country.</h2>
        
-        <p id="textArea"></p>
             <input type="button" value = "Information" onclick= "country1.writeCountry();" 
             name="write country1"/> 
+            <p id="textArea"></p>
         </p>
+
         <p>
             <h2>Click the picture for another hint</h2>
             <img src="Images/Button.png" width="200" height="200" onclick="this.src='Images/IrelandSilhouette.jpg'">
         </p>
+
         <p>
             <h2>Think you know the answer?</h2>
-        <input id="text_a" type="text" />
+        <input id="text_a" type="text"/>
         <p id="answer"></p>
-        <button onclick = "checkAnswer(Ireland)">Check your answer</button>
+        <button onclick = "myFunction()">Check your answer</button>
+   
         </p>
-        
+  
 
 
-    </div>
-
-                  
-
-           <input type="button" value = "write Country3" onclick= "country3.writeCountry();" 
-           name="write country3"/>
-         
-          <!-- Rome - button   -->
-         <input type="button" value = "write capital Country3" 
-         onclick= "writeText(country3.capital,'textArea2');" name="write country3"/>
-         
-         <input type="button" value = "write capital Country4" onclick= 
-         "writeText(country4.capital,'textArea2');" name="write country4"/>
-         
-        <input type="button" value = "write density Country5" 
-        onclick= "writeText(country5.density(),'textArea2');" name="write country5"/>                                                                                                                                
-          
-                                                                                                 
-        
-            <p id="textArea">   </p>
-            <p id="textArea2">   </p>
-                             
-           
-                                                                                                  
-    </p>
+        <h2>Click the button for information about the country.</h2>
+       
+        <p id="textArea"></p>
+            <input type="button" value = "Information" onclick= "country2.writeCountry();" 
+            name="write country2"/> 
+        </p>
+        <p>
+            <h2>Click the picture for another hint</h2>
+            <img src="Images/Button.png" width="200" height="200" onclick="this.src='Images/ThailandSilhouette.png'">
+        </p>
+        <p>
+            <h2>Think you know the answer?</h2>
+    
+        <input id="text_b" type="text" />
+        <p id="answer"></p>
+        <button onclick = "myFunction()">Check your answer</button>
+        </p>
+    </div>               
+                                                                                                
 
 </div>
 

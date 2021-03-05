@@ -22,7 +22,7 @@ font-family: 'Poppins', sans-serif;
     font-family: 'Poppins';
     font-size: 20px;
     color: #2C3259;
-    text-align: justify;
+    text-align: center;
     padding: 10px;
     }
     
@@ -84,60 +84,24 @@ font-family: 'Poppins', sans-serif;
         margin: auto;
         width: 90%;
         border: 3px solid #003d60;
+        align-items: center;
     }
     
     .button {
         background-color: #2493A2;
         color: #fffafa;
         border: 2px solid #DCB13C;
-    }
-    
-    /* Box model used from Melissa's page*/
-
-    /*1st country*/
-    .box1 {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        background-color: #fffafa;
-        box-sizing: border-box;
-        height: auto;
-        align-content: center;
-        text-align: center;
-    }
-     /*2nd country*/
-    .box2 {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        background-color: #fffafa;
-        box-sizing: border-box;
-        height: auto;
-        align-content: center;
-        text-align: center;
-    }
-     /*3rd country*/
-    .box3 {
-        float: left;
-        width: 33.33%;
-        padding: 10px;
-        background-color: #fffafa;
-        box-sizing: border-box;
-        height: auto;
-        align-content: center;
-        text-align: center;
+        justify-content: center;
     }
 
      /**/
-    .box4 {
-        width: 50%;
+    .box1 {
+        width: 80%;
         padding: 10px;
         background-color: #fffafa;
         box-sizing: border-box;
         height: auto;
         border: 2px solid #2493A2;
-        align-content: center;
-        text-align: center;
         margin-bottom: 10px;
     }
 
