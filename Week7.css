@@ -10,8 +10,7 @@ font-family: 'Lobster Two', cursive;
 font-family: 'Poppins', sans-serif;
 */
     
-body 
-{
+body {
     background-image: url("Images/Week7Background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,8 +18,7 @@ body
     background-position: center;
 }
 
-p 
-{
+p {
 font-family: 'Poppins';
 font-size: 30px;
 color: #2C3259;
@@ -28,23 +26,20 @@ text-align: center;
 padding: 10px;
 }
 
-h1 
-{
+h1 {
     font-family: 'Handlee';
     font-size: 50px;
     color: #2493A2;
     text-align: center;
 }
-h2 
-{
+h2 {
     font-family: 'Handlee';
     font-size: 25px;
     color: #DCB13C;
     text-align: center; 
 }
 
-#header 
-{
+#header {
     background-color: #DCB13C;
     border: 3px solid #2493A2;
     font-family: 'Lobster Two';
@@ -57,8 +52,7 @@ h2
 }
 
 /*Link Styles*/
-a:link, a:visited 
-{ 
+a:link, a:visited { 
     background-color: #2C3259;
     color: #DCB13C;
     padding: 10px 10px;
@@ -68,13 +62,11 @@ a:link, a:visited
     font-family: 'Handlee';
     font-size: 15px;
   }
-a:hover, a:active
-{ 
+a:hover, a:active{ 
     background-color: #2493A2;
 }
 
-#footer 
-{
+#footer {
     float: left;
     width: 100%;
     padding: 10px;
@@ -88,8 +80,7 @@ a:hover, a:active
 }
 
 /*Styling for buttons*/
-.button 
-{
+.button {
     background-color: #2493A2;
     color: #fffafa;
     border: 1px solid #DCB13C;
@@ -100,13 +91,11 @@ a:hover, a:active
 }
 
 /*Styling for Text appearing over image with mousehover*/
-.container 
-{
+.container {
     position: relative;
     width: 30%;
 }
-.mapImage 
-{
+.mapImage {
     opacity: 1;
     display: block;
     width: 100%;
@@ -115,8 +104,7 @@ a:hover, a:active
     backface-visibility: hidden;
   }
   
-  .middle 
-  {
+  .middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -126,18 +114,15 @@ a:hover, a:active
     -ms-transform: translate(-50%, -50%)
   }
   
-  .container:hover .image 
-  {
+  .container:hover .image {
     opacity: 0.3;
   }
   
-  .container:hover .middle 
-  {
+  .container:hover .middle {
     opacity: 1;
   }
   
-  .text 
-  {
+  .text {
     background-color: #DCB13C;
     color: white;
     font: "Poppins";
@@ -157,22 +142,9 @@ div
     text-align: center;
 }
 
-/*Testing New Boxes
-.box 
-{
-    float: left;
-    width: 85%;
-    padding: 10px;
-    box-sizing: border-box;
-    height: auto;
-    margin: auto;
-    text-align: center;
-}
-*/
+/*BOXES styling*/
 
-
-/*ORIGINAL BOXES*/
- Country Information
+/*Country Information*/
  .box1 {
     float: left;
     width: 30%;
@@ -184,7 +156,7 @@ div
     margin: 5px;
 }
 
-Pictures of Maps
+/*Pictures of Maps*/
 .box2 {
     float: left;
     width: 68%;
@@ -195,7 +167,7 @@ Pictures of Maps
     text-align: center;
     margin: 5px;
 }
-Answers
+/*Answers*/
 .box3 {
     float: left;
     width: 90%;
