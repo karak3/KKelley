@@ -93,7 +93,7 @@ a:hover, a:active{
 /*Styling for Text appearing over image with mousehover*/
 .container {
     position: relative;
-    width: 30%;
+    width: 50%;
 }
 .mapImage {
     opacity: 1;
@@ -125,9 +125,9 @@ a:hover, a:active{
   .text {
     background-color: #DCB13C;
     color: white;
-    font: "Poppins";
-    font-size: 16px;
-    padding: 16px 32px;
+    font-family: "Poppins";
+    font-size: 20px;
+    padding: 16px 25px;
   } 
 
 
@@ -147,37 +147,34 @@ div
 /*Country Information*/
  .box1 {
     float: left;
-    width: 30%;
+    width: 44.5%;
     padding: 10px;
     box-sizing: border-box;
-    height: auto;
     align-content: center;
     text-align: center;
-    margin: 5px;
+    margin: auto;
 }
 
 /*Pictures of Maps*/
 .box2 {
     float: left;
-    width: 68%;
+    width: 44.5%;
     padding: 10px;
     box-sizing: border-box;
-    height: auto;
     align-content: center;
     text-align: center;
-    margin: 5px;
+    margin: auto;
 }
 /*Answers*/
 .box3 {
     float: left;
     width: 90%;
     padding: 10px;
-    margin: 30px;
+    margin: auto;
     box-sizing: border-box;
     height: auto;
     align-content: center;
     text-align: center;
-    border: 2px solid #2493A2;
 }
 
 
