@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -30,38 +31,42 @@
             "The area is " + this.area + " square miles.";
             writeText (str, "textArea",);
         }
-
     };
 
 function writeText(txt, destination){
     document.getElementById(destination).innerHTML=txt;
 }
 
-/*Code for submit answer check http://jsfiddle.net/WTVxu/*/ 
+/*
+??? COULD NOT FIGURE OUT HOW TO PUT THIS INTO A CONSTRUCT???
+Functions used for submitting and checking answers
+Code for submit answer check modified from http://jsfiddle.net/WTVxu/
+*/ 
 function myFunction()
 {
     var a=document.getElementById("text_a").value;
-    if (a == "Ireland")
+    if (a=="Ireland")
     {
         document.getElementById("answer").innerText="You are correct!";
     }
     else
     {
-        document.getElementById("answer").innerHTML="Oops! Try Again."
+        document.getElementById("answer").innerHTML="Oops! Try Again.";
     }
-}
-function myFunction()
+};
+function myFunction1 ()
 {
     var b=document.getElementById("text_b").value;
     if (b=="Thailand")
     {
-        document.getElementById("answer").innerText="You are correct!";
+        document.getElementById("answer1").innerText="You are correct!";
     }
     else
     {
-        document.getElementById("answer").innerHTML="Oops! Try Again."
+        document.getElementById("answer1").innerHTML="Oops! Try Again.";
     }
-}
+};
+
 
 var country1 = new country("Ireland", "Europe", 6572728, "Dublin", "Temperate", 27133);
 var country2 = new country("Thailand", "Asia", 6963000, "Bangkok", "Tropical", 198117);
@@ -75,69 +80,75 @@ var country3 = new country();
 <body>
 
 <div id="header">
-Countries
+Guess the Countries
 </div>
+
 <br>
 
-<div class="clearfix">
-    <h1>
-        Guess the country
-    </h1>
 
-    <div class="box4">
-        <h2>Click the button for information about the country.</h2>
+
+    <div class="box1">
+        <h1>Click for information</h1>
        
-            <input type="button" value = "Information" onclick= "country1.writeCountry();" 
+            <input type="button" class="button" value = "Country 1" onclick= "country1.writeCountry();" 
             name="write country1"/> 
+
+            <br>
+            <br>
+
+            <input type="button" class="button" value = "Country 2" onclick= "country2.writeCountry();" 
+            name="write country2"/>
+
+            <br>
+
             <p id="textArea"></p>
-        </p>
+    </div>
 
-        <p>
-            <h2>Click the picture for another hint</h2>
-            <img src="Images/Button.png" width="200" height="200" onclick="this.src='Images/IrelandSilhouette.jpg'">
-        </p>
+<br>
+<br>
 
-        <p>
-            <h2>Think you know the answer?</h2>
-        <input id="text_a" type="text"/>
-        <p id="answer"></p>
-        <button onclick = "myFunction()">Check your answer</button>
-   
-        </p>
-  
+    <div class="box2">
+        <h1>Click for Map</h1>
+        <div class="container"> 
+            <img src="Images/Map.png" width="200" height="100" class="mapImage" alt="Map Placeholder" onclick="this.src='Images/IrelandSilhouette.jpg'">
+            <div class="middle">
+                <div class="text">Country 1</div>
+            </div>
+        </div>
+        <br>
+        <div class="container"> 
+            <img src="Images/Map.png" width="200" height="150" class="mapImage" alt="Map Placeholder" onclick="this.src='Images/ThailandSilhouette.png'">
+            <div class="middle">
+                <div class="text">Country 2</div>
+            </div>
+        </div> 
+        <br>
+        
+    </div>
 
+<br>
+<br>
 
-        <h2>Click the button for information about the country.</h2>
-       
-        <p id="textArea"></p>
-            <input type="button" value = "Information" onclick= "country2.writeCountry();" 
-            name="write country2"/> 
-        </p>
-        <p>
-            <h2>Click the picture for another hint</h2>
-            <img src="Images/Button.png" width="200" height="200" onclick="this.src='Images/ThailandSilhouette.png'">
-        </p>
-        <p>
-            <h2>Think you know the answer?</h2>
-    
-        <input id="text_b" type="text" />
-        <p id="answer"></p>
-        <button onclick = "myFunction()">Check your answer</button>
-        </p>
+    <div class="box3"> 
+            <h1>Think you know the answers?</h1>
+        <div>
+            <h2>Country 1</h2>
+            <input id="text_a" type="text"/>
+            <button onclick = "myFunction()">Check your answer</button>
+            <p id="answer"></p>
+
+            <h2>Country 2</h2>
+            <input id="text_b" type="text"/>
+            <button onclick = "myFunction1()">Check your answer</button>
+            <p id="answer1"></p>
+    </div>
+
     </div>               
                                                                                                 
-
 </div>
 
-<div class="clearfix">
-
-</div>
-</div>
-</div>
-</div>
 <br>
 
-<!--The only way the footer would stay outside of the box with the form was putting 4 end div tags-->
 <div id="footer">
         <a href="index.html" target='_blank'>Home</a>
         <a href="Week0.html" target='_blank'>Week 0</a>
@@ -147,6 +158,7 @@ Countries
         <a href="Week4.html" target='_blank'>Week 4</a>
         <a href="Week5.html" target='_blank'>Week 5</a>
         <a href="Week7.html" target='_blank'>Week 7</a>
+</div>
 </div>
 
 </body>
