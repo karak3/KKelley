@@ -5,13 +5,15 @@
 <html>
 <head>
     <title>Week 7</title>
-    <link rel="stylesheet" type="text/css" href="Week7.css" media="screen">
 <!---Link to Weekly CSS Sheet-->
+    <link rel="stylesheet" type="text/css" href="Week7.css" media="screen">
 
+<!--Link to Google fonts--> 
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Lobster+Two&family=Poppins:wght@300&display=swap" rel="stylesheet">
-<!--Link to Google fonts--> 
 
+
+<!--Constructor function  - like variables but condensed-->
 <script type = "text/javascript">
 
     function country (name, continent, population, capital, climate, area) {
@@ -33,7 +35,7 @@
             writeText (str, "textArea",);
         }
     };
-
+/*Function to write text out to html object*/ 
 function writeText(txt, destination){
     document.getElementById(destination).innerHTML=txt;
 }
@@ -68,10 +70,23 @@ function myFunction1 ()
     }
 };
 
+function myFunction2 ()
+{
+    var c=document.getElementById("text_c").value;
+    if (c=="Egypt")
+    {
+        document.getElementById("answer2").innerText="You are correct!";
+    }
+    else
+    {
+        document.getElementById("answer2").innerHTML="Oops! Try Again.";
+    }
+};
 
-var country1 = new country("Ireland", "Europe", 6572728, "Dublin", "Temperate", 27133);
-var country2 = new country("Thailand", "Asia", 6963000, "Bangkok", "Tropical", 198117);
-var country3 = new country();
+/*Variables for construct*/
+var country1 = new country("Ireland", "Europe", 4904000, "Dublin", "Temperate", 27133);
+var country2 = new country("Thailand", "Asia", 69630000, "Bangkok", "Tropical", 198117);
+var country3 = new country("Egypt", "Africa", 100400000, "Cairo", "Desert",  390100);
 
 </script>
 </head>
@@ -86,7 +101,7 @@ Guess the Countries
 
 <br>
 
-
+<!--Box 1 is for the country info. One button for each country. Text displays in the same area-->
 <div class="clearfix">
     <div class="box1">
         <h1>Click for information</h1>
@@ -101,6 +116,12 @@ Guess the Countries
             name="write country2"/>
 
             <br>
+            <br>
+
+            <input type="button" class="button" value = "Country 3" onclick= "country3.writeCountry();" 
+            name="write country3"/>
+
+            <br>
 
             <p id="textArea"></p>
     </div>
@@ -108,8 +129,12 @@ Guess the Countries
 <br>
 <br>
 
+<!--Box 2 is for country map silhouettes. 
+Country label will appear on hover. 
+Clicking the image will change the placeholder image to the map-->
     <div class="box2">
         <h1>Click for Map</h1>
+        <br>
         <div class="container"> 
             <img src="Images/Map.png" class="mapImage" alt="Map Placeholder" onclick="this.src='Images/IrelandSilhouette.jpg'">
             <div class="middle">
@@ -124,12 +149,20 @@ Guess the Countries
             </div>
         </div> 
         <br>
+        <div class="container"> 
+            <img src="Images/Map.png" class="mapImage" alt="Map Placeholder" onclick="this.src='Images/EgyptSilhouette.png'">
+            <div class="middle">
+                <div class="text">Country 3</div>
+            </div>
+        </div> 
+<br>
         
     </div>
 </div>
 <br>
 <br>
 
+<!--Box 3 is for checking answers-->
 <div class="clearfix">
     <div class="box3"> 
             <h1>Think you know the answers?</h1>
@@ -143,6 +176,12 @@ Guess the Countries
             <input id="text_b" type="text"/>
             <button onclick = "myFunction1()">Check your answer</button>
             <p id="answer1"></p>
+
+
+            <h2>Country 3</h2>
+            <input id="text_c" type="text"/>
+            <button onclick = "myFunction2()">Check your answer</button>
+            <p id="answer2"></p>
     </div>
 
 </div>               

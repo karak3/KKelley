@@ -20,7 +20,7 @@ body {
 
 p {
 font-family: 'Poppins';
-font-size: 30px;
+font-size: 20px;
 color: #2C3259;
 text-align: center;
 padding: 10px;
@@ -28,13 +28,13 @@ padding: 10px;
 
 h1 {
     font-family: 'Handlee';
-    font-size: 50px;
+    font-size: 40px;
     color: #2493A2;
     text-align: center;
 }
 h2 {
     font-family: 'Handlee';
-    font-size: 25px;
+    font-size: 30px;
     color: #DCB13C;
     text-align: center; 
 }
