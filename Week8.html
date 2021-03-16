@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Week 5</title>
+    <title>Week 8</title>
     <link rel="stylesheet" type="text/css" href="Week5.css" media="screen">
 <!---Link to Weekly CSS Sheet-->
 
@@ -21,6 +21,34 @@ function myFunction2(){
     function myFunction3(){
     document.getElementById("RSA").innerHTML = "While many schools in Lakeland offer a STEM program (Science, Technology, Engineering, and Math), at Rochelle, we deeply believe in the advantages of an arts education and therefore we offer a STEAM program, where we focus on Science, Technology, Engineering, Arts and Math.  Our students develop rich skills in communication, collaboration, creativity and critical thinking through many facets of public presentation both academically and artistically and are adept with using state of the art digital equipment in the process.";
     }
+
+/*Array*/
+var parentNames1 = ["Sonia Sotomayor", " Ruth Bader-Ginsburg"," Sandra Day O'Connor"];
+var parentNames2 = ["Dorothy Vaughn", " Mary Jackson", " Katherine Johnson"];
+var parentNames3 = ["Elizabeth Cady Stanton", " Susan B. Anthony", " Ida B. Wells"]
+
+/*Functions showNames creates the text string with the variables that appears once function addNames is executed. addNames prompts the user to enter their name.*/
+function showNames1(){
+    document.getElementById("school1").innerHTML = "Parents on this list: " + parentNames1;
+}
+function addNames1 (){
+    parentNames1.push(prompt("Enter your name to join this list."));
+    showNames1();
+}
+function showNames2(){
+    document.getElementById("school2").innerHTML = "Parents on this list: " + parentNames2;
+}
+function addNames2 (){
+    parentNames2.push(prompt("Enter your name to join this list."));
+    showNames2();
+}
+function showNames3(){
+    document.getElementById("school3").innerHTML = "Parents on this list: " + parentNames3;
+}
+function addNames3 (){
+    parentNames3.push(prompt("Enter your name to join this list."));
+    showNames3();
+}
 </script>
 </head>
 
@@ -63,7 +91,7 @@ function myFunction2(){
 <div class="clearfix">
 
     <h1>Join the waitlist now</h1>
-    <form NAME="Survey" METHOD="post" ACTION="http://www.tipjar.com/bin/generic&mailto=karak3%40usf.edu">
+    <form NAME="Survey" METHOD="post" ACTION="http://www.tipjar.com/bin/generic?Subject=TJGFH+TEST&mailto=ERY">
 
     <div class="box4">
 
@@ -98,39 +126,38 @@ function myFunction2(){
         <label for="Grade8"> 8th</label>
 <br>
 <br>
-    <div class="form-group">
+<input type="submit" value="Click Me to Submit">
+<!--Submit button now works to send email through tipjar-->
+</form>
+</div>
+</div>
+</div>
+</div>
 
-    Which school is your <b>first</b> choice? <select NAME="School">
-        <option VALUE="LCMA,"> Lawton Chiles Middle Academy
-        <option VALUE="BA">Blake Academy
-        <option VALUE="RSA">Rochelle School of the Arts
-    </select> 
-<br>
- <br>
-     Which school is your <b>second</b> choice? <select NAME="School">
-        <option VALUE="LCMA,"> Lawton Chiles Middle Academy
-        <option VALUE="BA">Blake Academy
-        <option VALUE="RSA">Rochelle School of the Arts
-    </select> 
-<br>
-<br>
-     Which school is your <b>third</b> choice? <select NAME="School">
-        <option VALUE="LCMA,"> Lawton Chiles Middle Academy
-        <option VALUE="BA">Blake Academy
-        <option VALUE="RSA">Rochelle School of the Arts
-    </select> 
-<br>
-<br>
-    <input type="submit" value="Click Me to Submit">
+<div class="clearfix">
+
+    <h1>Choose your school</h1>
+
+    <div class="box1">
+        <button type="button" onclick="addNames1()">Click to join the list for Lawton Chiles Middle Academy</button>
+        <p id="school1"></p>
+    </div>
+    <div class="box2">
+        <button type="button" onclick="addNames2()">Click to join the list for Blake Academy</button>
+        <p id="school2"></p>
+    </div>
+    <div class="box3">
+        <button type="button" onclick="addNames3()">Click to join the list for Rochelle School of the Arts</button>
+        <p id="school3"></p>
+    </div>
+<!--Not sure how to make the info collapse??-->
 <br>
 <br>
 </div>
-</div>
-</div>
-</div>
+
 <br>
 <br>
-<!--The only way the footer would stay outside of the box with the form was putting 4 end div tags-->
+
 <div id="footer">
         <a href="index.html" target='_blank'>Home</a>
         <a href="Week0.html" target='_blank'>Week 0</a>
