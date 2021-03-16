@@ -23,7 +23,9 @@ Navy Blue: #0c2f39
     font-family: 'Arvo';
     font-size: 14px;
     color: #0c2f39;
-    text-align: justify
+    text-align: justify;
+    display: inside;
+    overflow-wrap: break-word;
     }
     
     h1 {
