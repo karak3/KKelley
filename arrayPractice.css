@@ -1,0 +1,155 @@
+/*Fonts from Google*/
+/* Colors: 
+Ravenclaw Blue: #00165e rgb(0, 22, 94)
+Gryffindor Red: #9c1203 rgb(156, 18, 3)
+Hufflepuff Yellow: #e3a000 rgb(227, 160, 0)
+Slytherin Green: #033807 rgb(3, 56, 7)
+Gray: #D8D8D8
+*/
+
+@font-face {
+    font-family: 'Magic School One';
+    src: url('http://www.fontsaddict.com/fontface/magic-school-one.ttf');
+  }
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('http://www.fontsaddict.com/fontface/eb-garamond.otf');
+  }
+  
+    
+    body {
+        background-image: url("Images/arrayPractice.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    p {
+        font-family: 'EB Garamond';
+        font-size: 14px;
+        color: #D8D8D8;
+        text-align: justify;
+        display: inside;
+        overflow-wrap: break-word;
+    }
+    
+    h1 {
+        font-family: 'Magic School One';
+        font-size: 50px;
+        color: #D8D8D8;
+        text-align: center;
+    }
+    h2 {
+        font-family: 'EB Garamond';
+        font-size: 30px;
+        color: #D8D8D8;
+        text-align: center;  
+    }
+    
+    #header {
+        font-family: 'Magic School One';
+        background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
+        font-size: 60px;
+        color: #D8D8D8;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    /*Link Styles*/
+    a:link, a:visited { 
+        background-color: #033807;
+        color: #e3a000;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: 'Magic School One';
+        font-size: 15px;
+      }
+    a:hover, a:active
+    { 
+        background-color: #ffdd3e;
+    }
+    
+    #footer {
+        background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
+        color: #D8D8D8;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin: auto;
+    }
+    
+    /*Styling for box backgrounds*/
+    
+    div {
+        margin: auto;
+        width: 90%;
+    }
+    
+    
+    /* Box model used from Melissa's page*/
+
+    /*1st school*/
+    .box1 {
+        float: left;
+        width: 24%;
+        padding: 10px;
+        background-color: #9c1203;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+     /*2nd school*/
+    .box2 {
+        float: left;
+        width: 24%;
+        padding: 10px;
+        background-color: #e3a000;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+     /*3rd school*/
+    .box3 {
+        float: left;
+        width: 24%;
+        padding: 10px;
+        background-color: #033807;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+    .box4 {
+        float: left;
+        width: 24%;
+        padding: 10px;
+        background-color: #00165e;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+    }
+     /*Wait List Form*/
+    .mainBox {
+        float: left;
+        width: 96%;
+        padding: 5px;
+        box-sizing: border-box;
+        height: auto;
+        align-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /*Keeps things within boxes without overflowing*/
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
