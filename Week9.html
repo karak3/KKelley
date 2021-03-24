@@ -7,54 +7,99 @@
 <!---Link to Weekly CSS Sheet-->
 <link href="http://fonts.cdnfonts.com/css/freshman" rel="stylesheet">
 
-<script>
-    //Array of the best NFL teams after the 2020 season//
-    var bestTeams = ['Tampa Bay Buccaneers', 'Kansas City Chiefs', 'Buffalo Bills', 'Green Bay Packers', 'Los Angeles Rams', 'Baltimore Ravens', 'Seattle Seahawks', 'Indianapolis Colts', 'Cleveland Browns', 'Los Angeles Chargers', 'New Orleans', 'Pittsburgh Steelers', 'Tennessee Titans', 'San Francisco 49ers', 'Miami Dolphins']
-
-    //Array of the worst NFL teams after the 2020 season//
-    var worstTeams = ['Washington Football Team','Minnesota Vikings', 'Dallas Cowboys', 'Arizona Cardinals', 'Jacksonville Jaguars', 'Chicago Bears', 'Las Vegas Raiders', 'Carolina Panthers', 'New York Giants', 'Detroit Lions', 'New England Patriots', 'Denver Broncos', 'Atlanta Falcons', 'Cincinnati Bengals', 'New York Jets', 'Philadelphia Eagles', 'Houston Texans']
-
-
-function findBest (name, bestArray){
-    var len=bestArray.length;
-    var position = -9;
-
-    for (i=0; i<len; i++)
-    if (bestArray[i] == name)
-    position = i + 1
-
-    return position;
-}
-
-function findWorst (name, worstArray){
-    var len=worstArray.length;
-    var position = -9;
-
-    for (i=0; i<len; i++)
-    if (worstArray[i] == name)
-    position = i + 1
-
-    return position;
-}
-
-function findBestTeams(team) {
-    var pos = findBest(team, bestTeams);
-
-    if (pos == -9) {
-        writeText ("Your city was one of the best in the 2020 season! It is ranked" + pos + " out of 32 NFL teams. ")
+<script type="text/javascript">
+  
+    // This is an array of the best teams - was dirtyCities
+  var bestTeams = [
+  'Tampa Bay Buccaneers',
+  'Kansas City Chiefs',
+  'Buffalo Bills',
+  'Green Bay Packers',
+  'Los Angeles Rams',
+  'Baltimore Raven',
+  'Seattle Seahawks',
+  'Indianapolis Colts',
+  'Cleveland Browns',
+  'Los Angeles Chargers',
+  'New Orleans Saints',
+  'Pittsburgh Steelers',
+  'Tennessee Titans',
+  'San Francisco 49ers',
+  'Miami Dolphins',
+  'Washington Football Team'];
+    
+    // This is an array of the worst teams - was USACities 
+  
+    var worstTeams = [
+    'Houston Texans',
+    'Philadelphia Eagles',
+    'New York Jets',
+    'Cincinnati Bengals',
+    'Atlanta Falcons',
+    'Denver Broncos',
+    'New England Patriots',
+    'Detroit Lions',
+    'New York Giants',
+    'Carolina Panthers',
+    'Las Vegas Raiders',
+    'Chicago Bears',
+    'Jacksonville Jaguars',
+    'Arizona Cardinals',
+    'Dallas Cowboys',
+    'Minnesota Vikings'];
+    
+  // Loops & arrays
+  
+  
+  
+  
+  /*Input city name to check list.*/
+    function findCity(name, cityArray)
+    {
+    var len = cityArray.length;
+      var position = -9;
+    
+        for (i = 0; i < len; i++) 
+          if (cityArray[i] == name)
+          position = i + 1;
+      
+        return position;
     }
-    else {
-        writeText(Sorry! team +" is not in the top 16." )
+      
+  /*Input team name to check top 16 list*/
+    function findBestTeam(city)
+    {
+       var pos = findCity(city, bestTeams);
+      
+      if (pos == -9){
+        writeText("Yikes! Your team is not in the top 16 this season. Better luck next season!", "text");
+        }
+      else {
+          writeText("Yay! The " + city + " are ranked #" + pos + " out of the top 16 teams.", "text");
+          }
+  
     }
-}
-
-
-function writeText(txt, id) {
-    document.getElementById(id).innerHTML=txt;
-}
-</script>
-
-
+      
+  /*Input team name to check bottom 16 list*/
+     function findWorstTeam(city)
+    {
+       var pos = findCity(city, worstTeams);
+      
+      if (pos == -9){
+        writeText("Whoo hoo! Your team is not one of the worst this season!", "text");
+          }
+          else {
+          writeText("On no! The " + city + " are ranked #" + pos + " out of the bottom 16 teams.", "text");
+          }
+     }
+  
+  /* write it to writeText*/
+    function writeText(txt, id)
+          {  
+          document.getElementById(id).innerHTML=txt;
+          }
+  
+  </script>
 
 </head>
 
@@ -68,21 +113,25 @@ function writeText(txt, id) {
     <div class="grid1">
         <div>
             <h1>Best Teams</h1>
-            <h1>Top 16</h1> 
-            <p id="bestText"></p>
-            <input type="text" id="textForm" name="textForm" placeholder="Enter team name here" value=""><br>
-            <button type="button" onclick="findBestTeams(document.getElementById('textForm').value">Click here. </button>
+            <h2>Top 16</h2> 
+            <p>Ranked from best to worst</p>
+            <input type="text" id="textForm" name="textForm" placeholder="Enter Team Name" value=""><br>
+            <button type="button" onclick="findBestTeam(document.getElementById('textForm').value)">Click here</button>
         </div>
 
         <div>
-        <h1>Worst Teams</h1>
-        <h1>Bottom 16</h1>
-        <p id="worstText"></p>
-        <input type="text" id="entry2" name="entry2" placeholder="Enter team name here" value=""><br>
-        <button type="button" onclick="findWorstTeams(document.getElementById('entry2').value">Click here. </button>
+            <h1>Worst Teams</h1>
+            <h2>Bottom 16</h2>
+            <p>Ranked from worst to best</p>
+            <input type="text" id="textForm" name="textForm" placeholder="Enter Team Name" value=""><br>
+            <button type="button" onclick="findWorstTeam(document.getElementById('textForm').value)">Click here</button>
         </div>
-
     </div> <!--closes grid1-->
+
+    <div class="grid2">
+        <h1>Results</h1>
+        <p id="text"></p>
+    </div><!--closes grid2-->
 
     <div id="footer">
         <a href="index.html" target='_blank'>Home</a>
