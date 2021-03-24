@@ -31,13 +31,14 @@ p {
 h1 {
     font-family: 'Graduate', sans-serif;
     font-size: 45px;
+    font-weight: bold;
     color: #414345;
     text-shadow: 1px 1px white;
     text-align: center;
 }
     
 h2 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Graduate', sans-serif;
     font-size: 30px;
     color: #FFFFFF;
     text-shadow: 1px 1px #414345;
