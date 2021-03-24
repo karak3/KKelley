@@ -72,7 +72,7 @@
        var pos = findCity(city, bestTeams);
       
       if (pos == -9){
-        writeText("Yikes! Your team is not in the top 16 this season. Better luck next season!", "text");
+        writeText("Yikes! Your team is not in the top 16 this season. Better luck next year!", "text");
         }
       else {
           writeText("Yay! The " + city + " are ranked #" + pos + " out of the top 16 teams.", "text");
@@ -115,7 +115,8 @@
             <h1>Best Teams</h1>
             <h2>Top 16</h2> 
             <p>Ranked from best to worst</p>
-            <input type="text" id="textForm" name="textForm" placeholder="Enter Team Name" value=""><br>
+            
+            <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
             <button type="button" onclick="findBestTeam(document.getElementById('textForm').value)">Click here</button>
         </div>
 
@@ -123,7 +124,7 @@
             <h1>Worst Teams</h1>
             <h2>Bottom 16</h2>
             <p>Ranked from worst to best</p>
-            <input type="text" id="textForm" name="textForm" placeholder="Enter Team Name" value=""><br>
+            <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
             <button type="button" onclick="findWorstTeam(document.getElementById('textForm').value)">Click here</button>
         </div>
     </div> <!--closes grid1-->
