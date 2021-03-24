@@ -5,7 +5,11 @@ Silver: #A5ACAF rgb (165,172,175)
 Light gray: #D2D7Df rgb (210,215,223)
 White: #FFFFFF rgb (255,255,255)
 */
-    
+/*Fonts
+font-family: 'Graduate', cursive;
+font-family: 'Quicksand', sans-serif;
+*/
+
 body {
     background-image: url("Images/Week9Background.jpg");
     background-repeat: no-repeat;
@@ -15,7 +19,7 @@ body {
 }
     
 p {
-    font-family: sans-serif;
+    font-family: 'Quicksand';
     font-size: 20px;
     color: #0c2f39;
     font-weight: bold;
@@ -25,7 +29,7 @@ p {
 }
     
 h1 {
-    font-family: 'Freshman', sans-serif;
+    font-family: 'Graduate', sans-serif;
     font-size: 45px;
     color: #414345;
     text-shadow: 1px 1px white;
@@ -33,7 +37,7 @@ h1 {
 }
     
 h2 {
-    font-family: 'Freshman', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     color: #FFFFFF;
     text-shadow: 1px 1px #414345;
@@ -47,7 +51,7 @@ h2 {
 #header {
     background-image: linear-gradient(to bottom, #D2D7Df, #414345); 
     border: 3px solid #D2D7Df;
-    font-family: 'Freshman', sans-serif;
+    font-family: 'Graduate', sans-serif;
     font-size: 60px;
     color: black;
     text-shadow: 3px 3px 3px #d2d7df;
@@ -110,7 +114,7 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-family: 'Freshman', sans-serif;
+    font-family: 'Graduate', sans-serif;
     font-size: 15px;
 }
 a:hover, a:active{ 
