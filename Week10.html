@@ -120,12 +120,11 @@
     } 
   }, 1000); /*closes countdown function*/
 
-/*Commenting out - couldn't get sound to play
+/*Commenting out - couldn't get sound to play*/
 
   var player = new Audio ();
 
-    Sounds
-  var sounds = ["Cheer1.flac", "Cheer2.mp3", "Cheer3.wav", "Boo1.ogg", "Boo2.mp3", "Boo3.wav"];
+  var sounds = ["Cheer2.mp3", "Boo2.mp3"];
 
   function play(s) {
       player.src = s;
@@ -137,7 +136,7 @@
       var sound = " ";
       sound = randomStringFromArray(sounds);
       play(sound);
-  }*/
+  }
 
   </script>
 
@@ -179,7 +178,7 @@
 
         <p id="countDown"></p>
 
-        <!--Commenting out because it wouldn't work <input type="button" onclick="playRandomSound()" value="Play sound" />-->
+        <input type="button" onclick="playRandomSound()" value="Play sound" />
         <br>
     </div><!--closes grid2-->
 
