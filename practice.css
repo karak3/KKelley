@@ -1,0 +1,71 @@
+/*CSS style from Grid Practice-Webdesign*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+background: #3494E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#wrapper {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header, footer {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #9239FE;
+    height: 100px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: auto;
+    height: 400px;
+    background-color: #F7EA9D; 
+}
+    
+.grid1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.grid1 article {
+    height: 275px;
+    background-color: #F796ee;
+}
+
+.grid1 aside {
+    height: 275 px;
+    background-color: #DD40E6;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+}
+
+.grid2 section {
+    height: 225px;
+    background-color: #FCEBFA;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.grid3 section {
+    height: 200px;
+    background-color: #F8DAF4;
+}
