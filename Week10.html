@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Week 10</title>
-    <link rel="stylesheet" type="text/css" href="Week8B.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="Week10.css" media="screen">
 <!---Link to Weekly CSS Sheet-->
 
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -163,7 +163,7 @@
          player.play();
      }
      
-     /* Play a random sound - Boo sounds are linked to the worst teams list, cheer sounds are linked to the best teams list*/
+     /* Play a random sound*/
     function playRandomBoo()
      {
         var sound = " ";
@@ -198,7 +198,7 @@
             <p>Ranked from best to worst</p>
             
             <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
-            <button type="button" onclick= "playRandomCheer(); findBestTeam(document.getElementById('textForm').value)">Click here </button>
+            <button type="button" onclick= "findBestTeam(document.getElementById('textForm').value)">Click here </button>
         </div>
 
         <div>
@@ -206,7 +206,7 @@
             <h2>Bottom 16</h2>
             <p>Ranked from worst to best</p>
             <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
-            <button type="button" onclick = "playRandomBoo(); findWorstTeam(document.getElementById('textForm').value)">Click here</button>
+            <button type="button" onclick = "findWorstTeam(document.getElementById('textForm').value)">Click here </button>
         </div>
     </div> <!--closes grid1-->
 
@@ -216,6 +216,8 @@
 
         <p id="countDown"></p>
 
+        <button type = "button" class="button" onclick = "playRandomCheer()">Happy with your results? Click here. </button>
+        <button type = "button" class="button" onclick = "playRandomBoo()">Not happy with your results? Click here. </button>
  
         <br>
     </div><!--closes grid2-->

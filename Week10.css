@@ -61,7 +61,17 @@ h2 {
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
+/*Button style*/
+.button {
+    background-color: black;
+    color: #A5ACAF;
+    border: 1px solid #DCB13C;
+    justify-content: center;
+    font: 'Graduate';
+    font-size: 15px;
+    padding: 10px;
+    width: auto;
+}
 /*Boxes for best/worst lists*/
 .grid1 {
     display: grid;
