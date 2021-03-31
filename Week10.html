@@ -120,24 +120,62 @@
     } 
   }, 1000); /*closes countdown function*/
 
-/*Commenting out - couldn't get sound to play
 
-  var player = new Audio ();
+  function GetRandomRange(lower, upper)
+ {
+ var length, aNumber;
 
-  var sounds = ["Cheer2.mp3", "Boo2.mp3"];
+ length = (upper - lower) + 1;
+ aNumber = Math.floor(Math.random() * length) + lower;
+ 
+//  alert("GetRandomRange" + lower + " " + upper + " " + aNumber);
+ 
+ return aNumber;
 
-  function play(s) {
-      player.src = s;
-      player.load();
-      player.play();
+ }
+ function randomStringFromArray(anArray)
+  {
+    var aString, len, high_index;
+    
+    len = anArray.length;
+    high_index = len - 1;
+    random_index =  GetRandomRange(0, high_index);
+    
+    aString = anArray[random_index];
+    /*
+    alert("the random string from an array of stings that will be returned is " + aString);
+    */
+    return aString;
   }
 
-  function playRandomSound(){
-      var sound = " ";
-      sound = randomStringFromArray(sounds);
-      play(sound);
-  }*/
-
+ /* Write a random image to a location. So need an array of image names, and then randomly pick from that.. */
+   
+    /* Write a play random audio function */ 
+    var player = new Audio(); // define a global audio object
+     
+     /*  a global array of sounds */
+    var booSounds = ["/Users/karasims/Desktop/WebProgramming1/Sounds/Boo2.mp3", "/Users/karasims/Desktop/WebProgramming1/Sounds/Boo3.wav"];
+    var cheerSounds = ["/Users/karasims/Desktop/WebProgramming1/Sounds/Cheer2.mp3", "/Users/karasims/Desktop/WebProgramming1/Sounds/Cheer3.wav"];
+    //load and play the sound, s is the name of a mp3 or wav file
+     function play(s) {
+         player.src = s;
+         player.load();
+         player.play();
+     }
+     
+     /* Play a random sound - Boo sounds are linked to the worst teams list, cheer sounds are linked to the best teams list*/
+    function playRandomBoo()
+     {
+        var sound = " ";
+        sound = randomStringFromArray(booSounds);
+        play(sound);
+     }
+     function playRandomCheer()
+     {
+        var sound = " ";
+        sound = randomStringFromArray(cheerSounds);
+        play(sound);
+     }
   </script>
 
 </head>
@@ -160,7 +198,7 @@
             <p>Ranked from best to worst</p>
             
             <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
-            <button type="button" onclick="findBestTeam(document.getElementById('textForm').value)">Click here</button>
+            <button type="button" onclick= "playRandomCheer(); findBestTeam(document.getElementById('textForm').value)">Click here </button>
         </div>
 
         <div>
@@ -168,7 +206,7 @@
             <h2>Bottom 16</h2>
             <p>Ranked from worst to best</p>
             <input type="text" id="textForm" name="textForm" placeholder="Location and Name" value=""><br>
-            <button type="button" onclick="findWorstTeam(document.getElementById('textForm').value)">Click here</button>
+            <button type="button" onclick = "playRandomBoo(); findWorstTeam(document.getElementById('textForm').value)">Click here</button>
         </div>
     </div> <!--closes grid1-->
 
@@ -178,7 +216,7 @@
 
         <p id="countDown"></p>
 
-        <!--Commenting out. Wouldn't play sound<input type="button" onclick="playRandomSound()" value="Play sound" />-->
+ 
         <br>
     </div><!--closes grid2-->
 
