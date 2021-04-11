@@ -7,6 +7,7 @@ Slytherin Green: #033807 rgb(3, 56, 7)
 Gray: #D8D8D8
 */
 
+/*Fonts*/
 @font-face {
   font-family: 'Magic School One';
   src: url('http://www.fontsaddict.com/fontface/magic-school-one.ttf');
@@ -16,11 +17,12 @@ Gray: #D8D8D8
   src: url('http://www.fontsaddict.com/fontface/eb-garamond.otf');
 }
 
+
+/*General style areas*/
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
-
 body {
     background-image: url("Images/HPBackground.jpg");
     background-repeat: no-repeat;
@@ -28,7 +30,6 @@ body {
     background-attachment: fixed;
     background-position: center;
 }
-
 p {
   font-family: 'EB Garamond';
   font-size: 20px;
@@ -37,28 +38,24 @@ p {
   display: inside;
   overflow-wrap: normal;
 }
-
 h1 {
   font-family: 'Magic School One';
   font-size: 50px;
   color: #D8D8D8;
   text-align: center;
 }
-
 h2 {
   font-family: 'EB Garamond';
   font-size: 30px;
   color: #D8D8D8;
   text-align: center;  
 }
-
 h3 {
     font-family: 'Magic School One';
     font-size: 50px;
     color: #9c1203;
     text-align: center;
   }
-
 
 #header {
   font-family: 'Magic School One';
@@ -70,7 +67,6 @@ h3 {
   box-sizing: border-box;
   width: 100%;
 }
-
 
 #footer {
     background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
@@ -88,6 +84,17 @@ h3 {
     background-color: #9c1203;
     color: #D8D8D8;
 }
+
+div.content {
+    margin-left: 200px;
+    padding: 10px;
+    height: 100%;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
 
 
 
@@ -121,7 +128,9 @@ h3 {
     color: #D8D8D8;
 }
 
-/*Main content*/
+
+
+/*Main content - responsive box that resizes with sidebar*/
 .content {
     width: 90%;
     margin: 0 auto;
@@ -134,15 +143,7 @@ h3 {
     display: table;
 }
 
-div.content {
-    margin-left: 200px;
-    padding: 10px;
-    height: 100%;
-}
-img {
-    width: 200px;
-    height: 200px;
-}
+
 
 
 
@@ -157,7 +158,6 @@ img {
     align-content: center;
     width: 90%;
 }
-
 .grid1 div {
 	height: auto;
     text-align: center;
@@ -171,7 +171,7 @@ img {
 }
 
 
-/*1 box*/
+/*Box with 1 row and light gray background*/
 .box1 {
     display: inline-block;
     background-color: #D8D8D8;
@@ -195,7 +195,7 @@ img {
     margin-bottom: 1%;
 }
 
-
+/*Row with 2 columns, 1 twice as big, no preset background color -style in HTML*/
 .grid2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -203,13 +203,11 @@ img {
     margin-top: 10px;
     width: 90%;
 }
-
 .grid2 article {
     border: 1px solid #D8D8D8;
     height: auto;
     text-align: center;
 }
-
 .grid2 aside {
     border: 1px solid #00165e;
     background-color: #D8D8D8;
@@ -221,6 +219,44 @@ img {
     text-align: center;
 }
 
+
+/*Image map box*/
+.mapBox {
+    display: inline-block;
+    background-color: #D8D8D8;
+    border: 2px solid #9c1203;
+    margin: 5%;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+}
+.mapBox img {
+    width: 1000px;
+    height: 1000px;
+    margin-bottom: 1%;
+}
+
+/*Box that displays on tablets/phones - 1 row, 4 columns - similar to grid1*/
+.respBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin: 5%;
+    float: left;
+    align-content: center;
+    width: 90%;
+}
+.respBox div {
+    height: auto;
+    text-align: center;
+    padding: 5%;
+    box-sizing: border-box;
+}
+.respBox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 
 
@@ -263,16 +299,22 @@ img {
         height: 50%;
     }
 
-    .grid1, .grid2 {
+    .grid1, .grid2, .respBox {
         width: 100%;
         display: block;
     }
 
-    .grid1, .grid2::after {
+    .grid1, .grid2, .respBox::after {
         content: "";
         clear: both;
         display: table;
     }
+    
+/*Hides image map*/
+    .mapBox {
+        display: none;
+    }
+
 }
 
 
@@ -295,7 +337,7 @@ img {
         height: 75%;
     }
 
-    .grid1, .grid2 div {
+    .grid1, .grid2, .respBox div {
         height: fit-content;
         text-align: center;
         padding: 5%;
@@ -303,7 +345,7 @@ img {
     }
 
 
-    /*Make sidebar into topbar with links horizontal*/
+/*Make sidebar into topbar with links horizontal*/
     .sidebar {
         width: 100%;
         height: auto;
@@ -321,11 +363,18 @@ img {
         height: 75%;
     }
 
+/*Hides image map*/
+    .mapBox {
+        display: none;
+    }
+
 }
 
 
 
 /* this targets DESKTOPS */
 @media screen and (min-width: 1024px) {
-
+    .respBox {
+        display: none;
+    }
 }

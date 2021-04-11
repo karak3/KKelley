@@ -8,7 +8,8 @@
 <link href="FinalProject.css" rel="stylesheet" type="text/css">
 
 <script>
-/*Button commands - Text for houses will be displayed when the button is clicked. All data taken from school webpages*/
+/*Button commands - Text for houses will be displayed when the button is clicked. 
+Not needed on page 3. Needed on individual house pages
     function myFunction1(){
         document.getElementById("house1").innerHTML = "ENTER description here.";
     }
@@ -21,6 +22,7 @@
     function myFunction4(){
         document.getElementById("house4").innerHTML = "ENTER description here.";
     }
+    */
 
 </script>
 </head>
@@ -38,9 +40,9 @@
     </div><!--Closes sidebar-->
 
     <div class="content"> <!--Main Page Content-->
-        <div class="box1">
+        <div class="mapBox"><!--This box only displays on screens larger than 1024px-->
             <h3>Click a room to learn more about that house.</h3>
-            <img src="Images/CommonRooms.jpg" alt="Common Rooms Image" usemap="#workmap" width="1000px" height="1000px">
+            <img src="Images/CommonRooms.jpg" alt="Common Rooms Image" usemap="#workmap">
 
             <map name="workmap">
                 <area shape="rect" coords="0,0,500,500" href="Gryffindor.html">
@@ -48,8 +50,45 @@
                 <area shape="rect" coords="0,500,500,1000" href="Slytherin.html">
                 <area shape="rect" coords="500,500,1000,1000" href="Ravenclaw.html">
             </map>
-       
-        </div><!--Closes box1-->
+        </div><!--Closes mapBox-->
+
+        
+        <div class="respBox">
+    <!--This only displays on screens smaller than 1024px. 
+        For screens 640-1024px, the columns lay horizontal
+        For screens >640px, the columns stack vertical-->
+            <div style="background-color: #9c1203;">
+                <a href="Gryffindor.html">
+                    <img src="Images/GryffindorMascot.png" alt="Gryffindor mascot">
+                </a>
+
+                <h2>Gryffindor</h2>
+            </div>
+    
+            <div style="background-color: #e3a000;">
+                <a href="Hufflepuff.html">
+                    <img src="Images/HufflepuffMascot.png" alt="Hufflepuff mascot">
+                </a>
+
+                <h2>Hufflepuff</h2>
+            </div>
+    
+            <div style="background-color: #033807;">
+                <a href="Slytherin.html">
+                    <img src="Images/SlytherinMascot.png" alt="Slytherin mascot">
+                </a>
+
+                <h2>Slytherin</h2>
+            </div>
+    
+            <div style="background-color: #00165e;">
+                <a href="Ravenclaw.html">
+                    <img src="Images/RavenclawMascot.png" alt="Ravenclaw mascot">
+                </a>
+                
+                <h2>Ravenclaw</h2>
+            </div>
+        </div>
     </div> <!--Closes content-->
 <br>
 
