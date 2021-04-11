@@ -38,33 +38,18 @@
     </div><!--Closes sidebar-->
 
     <div class="content"> <!--Main Page Content-->
-        <div class="grid1"><!--Row with 4 columns-->
-            <div style="background-color: #9c1203;">
-                <input type="image" src="Images/GryffindorMascot.png" alt="Gryffindor mascot" onclick="myFunction1()" width="150px" height="150px">
-                <h2>Gryffindor</h2>
-                <p id="house1"></p> 
-            </div>
+        <div class="box1">
+            <h3>Click a room to learn more about that house.</h3>
+            <img src="Images/CommonRooms.jpg" alt="Common Rooms Image" usemap="#workmap" width="1000px" height="1000px">
 
-            <div style="background-color: #e3a000;">
-                <input type="image" src="Images/HufflepuffMascot.png" alt="Hufflepuff mascot" onclick="myFunction2()" width="150px" height="150px">
-                <h2>Hufflepuff</h2>
-                <p id="house2"></p> 
-            </div>
-
-            <div style="background-color: #033807;">
-                <input type="image" src="Images/SlytherinMascot.png" alt="Slytherin mascot" onclick="myFunction3()" width="150px" height="150px">
-                <h2>Slytherin</h2>
-                <p id="house3"></p> 
-            </div>
-
-            <div style="background-color: #00165e;">
-                <input type="image" src="Images/RavenclawMascot.png" alt="Ravenclaw mascot" onclick="myFunction4()" width="150px" height="150px">
-                <h2>Ravenclaw</h2>
-                <p id="house4"></p>
-            </div>
-
-        </div> <!--Closes grid1-->
-        
+            <map name="workmap">
+                <area shape="rect" coords="0,0,500,500" href="Gryffindor.html">
+                <area shape="rect" coords="500,0,1000,500" href="Hufflepuff.html">
+                <area shape="rect" coords="0,500,500,1000" href="Slytherin.html">
+                <area shape="rect" coords="500,500,1000,1000" href="Ravenclaw.html">
+            </map>
+       
+        </div><!--Closes box1-->
     </div> <!--Closes content-->
 <br>
 

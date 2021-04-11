@@ -196,6 +196,33 @@ img {
 }
 
 
+.grid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 10px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.grid2 article {
+    border: 1px solid #D8D8D8;
+    height: auto;
+    text-align: center;
+}
+
+.grid2 aside {
+    border: 1px solid #00165e;
+    background-color: #D8D8D8;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+
+
 
 /*MEDIA QUERIES*/
 /* This targets PHONES */
@@ -236,12 +263,12 @@ img {
         height: 50%;
     }
 
-    .grid1 {
+    .grid1, .grid2 {
         width: 100%;
         display: block;
     }
 
-    .grid1::after {
+    .grid1, .grid2::after {
         content: "";
         clear: both;
         display: table;
@@ -268,7 +295,7 @@ img {
         height: 75%;
     }
 
-    .grid1 div {
+    .grid1, .grid2 div {
         height: fit-content;
         text-align: center;
         padding: 5%;
