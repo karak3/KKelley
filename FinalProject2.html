@@ -74,36 +74,39 @@ alert ("Your totals for each house are:" +
   <div class="content"> <!--Main Page Content-->
     <div class="box1">
       <img src="Images/HouseBanners.png" alt="Banners reprensenting school and houses">
-      <h3>Choose the answer that best fits you.</h3>
-        <form>
-          <p>Which animal do you like the most?</p>
-            <input type="radio" id="eagle" name="animal" value="ravenclaw">
-            <label for="eagle">Eagle</label><br>
+
+      <h2 style="color: #e3a000;">Choose the answer that best fits you.</h2>
+
+      <form>
+        <p>Which animal do you like the most?</p>
+          <input type="radio" id="eagle" name="animal" value="ravenclaw">
+          <label for="eagle">Eagle</label><br>
+      
+          <input type="radio" id="snake" name="animal" value="slytherin">
+          <label for="snake">Snake</label><br>
+
+          <input type="radio" id="lion" name="animal" value="gryffindor">
+          <label for="lion">Lion</label><br>
+
+          <input type="radio" id="badger" name="animal" value="hufflepuff">
+          <label for="badger">Badger</label><br>
+
+        <p>Which motto do you agree with most?</p>
+          <input type="radio" id="motto1" name="motto" value="gryffindor">
+          <label for="motto1">"Do what is right."</label><br>
+          
+          <input type="radio" id="motto2" name="motto" value="ravenclaw">
+          <label for="motto2">"Do what is wise."</label><br>
+
+          <input type="radio" id="motto3" name="motto" value="hufflepuff">
+          <label for="motto3">"Do what is kind."</label><br>
+
+          <input type="radio" id="motto4" name="motto" value="slytherin">
+          <label for="motto4">"Do what is necessary."</label><br>
+      </form>
         
-            <input type="radio" id="snake" name="animal" value="slytherin">
-            <label for="snake">Snake</label><br>
-
-            <input type="radio" id="lion" name="animal" value="gryffindor">
-            <label for="lion">Lion</label><br>
-
-            <input type="radio" id="badger" name="animal" value="hufflepuff">
-            <label for="badger">Badger</label><br>
-
-          <p>Which motto do you agree with most?</p>
-            <input type="radio" id="motto1" name="motto" value="gryffindor">
-            <label for="motto1">"Do what is right."</label><br>
-            
-            <input type="radio" id="motto2" name="motto" value="ravenclaw">
-            <label for="motto2">"Do what is wise."</label><br>
-
-            <input type="radio" id="motto3" name="motto" value="hufflepuff">
-            <label for="motto3">"Do what is kind."</label><br>
-
-            <input type="radio" id="motto4" name="motto" value="slytherin">
-            <label for="motto4">"Do what is necessary."</label><br>
-        </form>
-        
-        <button onclick="submitQuiz()">Submit</button>
+      <button onclick="submitQuiz()">Submit</button>
+      
     </div> <!--Closes box1-->
   </div><!--Closes content-->
 
