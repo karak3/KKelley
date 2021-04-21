@@ -10,11 +10,11 @@ Gray: #D8D8D8
 /*Fonts*/
 @font-face {
   font-family: 'Magic School One';
-  src: url('http://www.fontsaddict.com/fontface/magic-school-one.ttf');
+  src: url('https://www.fontsaddict.com/fontface/magic-school-one.ttf');
 }
 @font-face {
   font-family: 'EB Garamond';
-  src: url('http://www.fontsaddict.com/fontface/eb-garamond.otf');
+  src: url('https://www.fontsaddict.com/fontface/eb-garamond.otf');
 }
 @font-face {
     font-family: 'Lumos';
@@ -50,7 +50,7 @@ h1 {
 }
 h2 {
   font-family: 'Lumos';
-  font-size: 60px;
+  font-size: 30px;
   color: #D8D8D8;
   text-align: center;  
 }
@@ -154,6 +154,7 @@ img {
 	margin: 2%;
     float: left;
     align-content: center;
+    width: 85%;
 }
 .grid1 div {
 	height: fit-content;
@@ -333,7 +334,7 @@ img {
         height: 75%;
     }
 
-    .grid1, .grid2, .respBox, {
+    .grid1, .grid2, .respBox {
         display: grid;
         grid-template-columns: 1fr 1fr;
         vertical-align: middle;
