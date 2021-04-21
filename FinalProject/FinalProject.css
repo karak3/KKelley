@@ -9,16 +9,16 @@ Gray: #D8D8D8
 
 /*Fonts*/
 @font-face {
-  font-family: 'Magic School One';
-  src: url('https://www.fontsaddict.com/fontface/magic-school-one.ttf');
+  font-family: 'HarryP';
+  src: url('FontKit/HarryP.woff');
 }
 @font-face {
-  font-family: 'EB Garamond';
-  src: url('https://www.fontsaddict.com/fontface/eb-garamond.otf');
+  font-family: 'EBGaramond';
+  src: url('FontKit/EBGaramond.woff');
 }
 @font-face {
     font-family: 'Lumos';
-    src: url('http://www.fontsaddict.com/fontface/lumos.TTF');
+    src: url('FontKit/Lumos.woff');
   }
 
 
