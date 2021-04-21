@@ -7,7 +7,7 @@ Slytherin Green: #033807 rgb(3, 56, 7)
 Gray: #D8D8D8
 */
 
-/*Fonts*/
+/*Fonts - downloaded and uploaded into a webfont toolkit, added to GitHub to be hosted*/
 @font-face {
   font-family: 'HarryP';
   src: url('FontKit/HarryP.woff');
@@ -35,7 +35,7 @@ body {
     background-position: center;
 }
 p {
-  font-family: 'EB Garamond';
+  font-family: 'EBGaramond';
   font-size: 20px;
   color: #D8D8D8;
   text-align: justify;
@@ -43,7 +43,7 @@ p {
   overflow-wrap: normal;
 }
 h1 {
-  font-family: 'Magic School One';
+  font-family: 'HarryP';
   font-size: 60px;
   color: #D8D8D8;
   text-align: center;
@@ -56,7 +56,7 @@ h2 {
 }
 
 #header {
-  font-family: 'Magic School One';
+  font-family: 'HarryP';
   background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
   font-size: 80px;
   color: #D8D8D8;
@@ -72,7 +72,7 @@ h2 {
     padding: 10px;
 }
 #footer a {
-    font-family: 'EB Garamond';
+    font-family: 'Lumos';
     color: #D8D8D8;
     font-size: 20px;
 }
@@ -96,7 +96,7 @@ h2 {
     position: fixed;
     height: 100%;
     overflow: auto;
-    font-family: 'Magic School One';
+    font-family: 'HarryP';
     font-size: 30px;
 }
 /*Sidebar links*/
@@ -144,9 +144,7 @@ img {
 
 
 
-
-/*NOT resizing automatically -- WHY???*/
-/*Row with 4 columns*/
+/*FINISHED! - Row with 4 columns*/
 .grid1 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -218,7 +216,7 @@ img {
 }
 
 
-/*FINISHED! - Image map box*/
+/*FINISHED! - Box to hold image map*/
 .mapBox {
     display: inline-block;
     background-color: #D8D8D8;
