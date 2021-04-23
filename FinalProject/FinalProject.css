@@ -166,7 +166,6 @@ img {
     display: table;
 }
 
-
 /*FINISHED! - Box with 1 row and light gray background*/
 .box1 {
     display: inline-block;
@@ -191,7 +190,7 @@ img {
     margin-bottom: 1%;
 }
 
-/*FINISHED! - Row with 2 columns, 1 twice as big, no preset background color -style in HTML*/
+/*Row with 2 columns, 1 twice as big, no preset background color -style in HTML*/
 .grid2 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -213,6 +212,20 @@ img {
     display: block;
     align-content: center;
     text-align: center;
+}
+
+/*Box for Quiz page that holds images for answers*/
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2%;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+}
+.box2 img {
+    height: 100px;
+    width: 100px;
 }
 
 
@@ -252,6 +265,7 @@ img {
     clear: both;
     display: table;
 }
+
 
 
 
