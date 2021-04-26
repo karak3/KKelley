@@ -47,13 +47,20 @@ h1 {
   font-size: 60px;
   color: #D8D8D8;
   text-align: center;
-}
+}/*Heading at top of pages*/
 h2 {
   font-family: 'Lumos';
   font-size: 30px;
   color: #D8D8D8;
   text-align: center;  
-}
+}/*Smaller Heading - Lumos font - gray*/
+h3 {
+    font-family: 'Lumos';
+    font-size: 40px;
+    color: #00165e;
+    text-align: center;  
+
+}/*Question heading - lumos font - blue */
 
 #header {
   font-family: 'HarryP';
@@ -81,10 +88,6 @@ h2 {
     background-color: #9c1203;
     color: #D8D8D8;
 }
-
-
-
-
 
 
 /*Side Navigation menu*/
@@ -117,8 +120,6 @@ h2 {
     color: #D8D8D8;
 }
 
-
-
 /*Main content - responsive box that resizes with sidebar*/
 .content {
     width: 90%;
@@ -137,12 +138,60 @@ div.content {
     height: 100%;
 }
 img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
+/*Image with text overlay*/
+.imageContainer {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.imageContainer img {
+    vertical-align: middle;
+}
+.imageText {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #D8D8D8;
+    width: 85%;
+    padding: 20px;
+}
 
-
+/*Quiz content*/
+/*Box that holds pictures for quiz answers*/
+.answerBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+.answerBox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Hides radio buttons - don't use display: hide because it affects accessibility*/
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+/*Adds border around selected pictures*/
+input[type=radio]:checked +label>img {
+    border: 3px solid #9c1203;
+    box-shadow: 0 0 5px 5px #033807;
+}
+/*Sizes for images within answer boxes*/
+input[type=radio] +label>img {
+    height: 200px;
+    width: 200px;
+}
 
 /*FINISHED! - Row with 4 columns*/
 .grid1 {
@@ -170,7 +219,7 @@ img {
 .box1 {
     display: inline-block;
     background-color: #D8D8D8;
-    border: 2px solid #9c1203;
+    border: 3px solid #e3a000;
     margin: 2%;
     padding: 10px;
     text-align: center;
@@ -214,22 +263,7 @@ img {
     text-align: center;
 }
 
-/*Box for Quiz page that holds images for answers*/
-.box2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 2%;
-    padding: 5px;
-    text-align: center;
-    width: auto;
-}
-.box2 img {
-    height: 100px;
-    width: 100px;
-}
-
-
-/*FINISHED! - Box to hold image map*/
+/*FINISHED! - Box to hold image map - hidden on tablets and phones*/
 .mapBox {
     display: inline-block;
     background-color: #D8D8D8;
@@ -245,7 +279,7 @@ img {
     margin-bottom: 1%;
 }
 
-/*FINISHED! - Box that displays on tablets/phones - 1 row, 4 columns - similar to grid1*/
+/*FINISHED! - Box that displays on tablets/phones instead of imagemap- 1 row, 4 columns - similar to grid1*/
 .respBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -308,16 +342,24 @@ img {
         height: 50%;
     }
 
+    /* Makes content display stacked vertical */
     .grid1, .grid2, .respBox, .box1 {
         width: 100%;
         display: block;
     }
 
-    .grid1, .grid2, .respBox::after {
+    .grid1, .grid2, .respBox, .box1, .answerBox::after {
         content: "";
         clear: both;
         display: table;
     }
+    .answerBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
+    }
+
+
     
 /*Hides image map*/
     .mapBox {
@@ -345,7 +387,7 @@ img {
         width: 100%;
         height: 75%;
     }
-
+/*Makes grid 2x2 instead of 1x4*/
     .grid1, .grid2, .respBox {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -357,11 +399,17 @@ img {
         padding: 5%;
         box-sizing: border-box;
     }
-    .grid1, .grid2, .respBox::after {
+    .grid1, .grid2, .respBox ::after {
         content: "";
         clear: both;
         display: grid;
     }
+
+    input[type=radio] +label>img {
+        height: 150px;
+        width: 150px;
+    }/*Images for quiz answers*/
+
 
 
 
@@ -397,5 +445,5 @@ img {
 @media screen and (min-width: 1024px) {
     .respBox {
         display: none;
-    }
+    }/*Hides the box for images that replaces image map*/
 }
