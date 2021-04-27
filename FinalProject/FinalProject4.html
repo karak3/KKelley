@@ -28,7 +28,7 @@
 
     /*Generates random selection from construct*/
         function generateGryffindorQuote(){
-            const random = Number.parseInt(Math.random() * gryffindorQuotes.length + 1);
+            const random = Number.parseInt(Math.random() * gryffindorQuotes.length + 0);
             document.querySelector('#gQuoteOutput').textContent = `\"${gryffindorQuotes[random].quote}\"`;
             document.querySelector('#gAuthorOutput').textContent = `--${gryffindorQuotes[random].author}`; 
         }
@@ -48,12 +48,12 @@
         'quote': 'I feel that if a single pupil wants to come, then the school ought to remain open for that pupil.'},
 
         {'author': 'The Fat Friar',
-        'quote': 'Forive and forget.'},
+        'quote': 'Forgive and forget.'},
     ];
 
     /*Generates random selection from construct*/
         function generateHufflepuffQuote(){
-            const random = Number.parseInt(Math.random() * hufflepuffQuotes.length + 1);
+            const random = Number.parseInt(Math.random() * hufflepuffQuotes.length + 0);
             document.querySelector('#hQuoteOutput').textContent = `\"${hufflepuffQuotes[random].quote}\"`;
             document.querySelector('#hAuthorOutput').textContent = `--${hufflepuffQuotes[random].author}`; 
         }
@@ -78,7 +78,7 @@
 
     /*Generates random selection from construct*/
         function generateslytherinQuote(){
-            const random = Number.parseInt(Math.random() * slytherinQuotes.length + 1);
+            const random = Number.parseInt(Math.random() * slytherinQuotes.length + 0);
             document.querySelector('#sQuoteOutput').textContent = `\"${slytherinQuotes[random].quote}\"`;
             document.querySelector('#sAuthorOutput').textContent = `--${slytherinQuotes[random].author}`; 
         }
@@ -97,13 +97,13 @@
         {'author': 'Filius Flitwick',
         'quote': 'Swish and flick, remember, swish and flick.'},
 
-        {'author': 'Sylbil Trelawney',
+        {'author': 'Sybil Trelawney',
         'quote': 'How nice to see you in the physical world at last.'},
     ];
 
     /*Generates random selection from construct*/
         function generateRavenclawQuote(){
-            const random = Number.parseInt(Math.random() * ravenclawQuotes.length + 1);
+            const random = Number.parseInt(Math.random() * ravenclawQuotes.length + 0);
             document.querySelector('#rQuoteOutput').textContent = `\"${ravenclawQuotes[random].quote}\"`;
             document.querySelector('#rAuthorOutput').textContent = `--${ravenclawQuotes[random].author}`; 
         }
