@@ -8,11 +8,33 @@
     <link href="FinalProject.css" rel="stylesheet" type="text/css">
 
     <script>
-    /*Array*/
-        var gryffindorNames = ["Harry Potter", " Hermione Granger", " Ron Weasley", " Albus Dumbledore"];
-        var hufflepuffNames = ["Newt Scamander", " Pomona Sprout", " Nymphadora Tonks"]
-        var slytherinNames = ["Draco Malfoy", " Severus Snape", " Horace Slughorn"]
-        var ravenclawNames = ["Luna Lovegood", " Rowena Ravenclaw", " Filius Flitwick", " Cho Chang"];
+
+    /*Array that holds values of quotes - 1 array per house*/
+    const arrayOfGryffindorQuotes = [
+        {'author': '',
+        'quote': 'It does not do to dwell on dreams and forget to live.'
+        },
+        {'author': 'Ron Weasley',
+        'quote': 'There\'s a time and a place for getting a smart mouth.'
+        },
+        {'author': 'Hermione Granger',
+        'quote': 'Actaully, I\'m highly logical, which allows me to look past extraneous detail and perceive clearly that which others overlook.'
+        },
+        {'author': 'Ginny Weasley',
+        'quote': 'Anything\'s possible if you\'ve got enough nerve.'
+        },
+        {'author': 'Harry Potter',
+        'quote': 'Working Hard Is Important, But There\'s Something That Matters Even More: Believing In Yourself.'
+        },
+    ]
+
+
+    
+    /*Array that holds values for list*/
+        var gryffindorNames = ["Harry Potter", " Hermione Granger", " Ron Weasley", " Albus Dumbledore", " Ginny Weasley",];
+        var hufflepuffNames = ["Newt Scamander", " Pomona Sprout", " Nymphadora Tonks"," The Fat Friar", " Helga Hufflepuff",]
+        var slytherinNames = ["Draco Malfoy", " Severus Snape", " Horace Slughorn"," Dolores Umbridge"," Tom Marvolo Riddle",]
+        var ravenclawNames = ["Luna Lovegood", " Rowena Ravenclaw", " Filius Flitwick", " Garrick Ollivander", " Sybil Trelawney",];
     
     /*Functions showNames creates the text string with the variables that appears once function  is executed -  prompts the user to enter their name.*/
         function showGryffindor(){
@@ -66,9 +88,12 @@
         <div style="background-color: #9c1203;">
             <img src="Images/GryffindorAni.gif" alt="Gryffindor gif">
             <br>
-            <button type="button" onclick="addGryffindor()"">Join Gryffindor</button>
+            <button type="button" onclick="addGryffindor()">Join Gryffindor</button>
             <h2>Famous Gryffindors:</h2>
             <p id="Gryffindor"></p>
+            <hr>
+            <h2>Words of Wisdom from famous Gryffindors</h2>
+            <button type="button" onclick="#">Quote</button>
         </div>
 
         <div style="background-color: #e3a000;">
@@ -77,6 +102,9 @@
             <button type="button" onclick="addHufflepuff()">Click to join Hufflepuff</button>
             <h2>Famous Hufflepuffs:</h2>
             <p id="Hufflepuff"></p>
+            <hr>
+            <h2>Words of Wisdom from famous Hufflepuffs</h2>
+            <button type="button" onclick="#">Quote</button>
         </div>
 
         <div style="background-color: #033807;">
@@ -85,6 +113,9 @@
             <button type="button" onclick="addSlytherin()">Click to join Slytherin</button>
             <h2>Famous Slytherins:</h2>
             <p id="Slytherin"></p>
+            <hr>
+            <h2>Words of Wisdom from famous Slytherins</h2>
+            <button type="button" onclick="#">Quote</button>
         </div>
 
         <div style="background-color: #00165e;">
@@ -93,6 +124,9 @@
             <button type="button" onclick="addRavenclaw()">Click to join Ravenclaw </button>
             <h2>Famous Ravenclaws:</h2>
             <p id="Ravenclaw"></p>
+            <hr>
+            <h2>Words of Wisdom from famous Ravenclaws</h2>
+            <button type="button" onclick="#">Quote</button>
         </div>
 
     </div> <!--Closes grid1-->
