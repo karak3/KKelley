@@ -9,17 +9,17 @@
 
 <!--Code help for quiz that totaled results found https://www.youtube.com/watch?v=TI6r9XTR6V4-->
 <script>
-/*Dr. Smith's code help + outlining selected boxes*/
+/*Dr. Smith's code help*/
 
  /* array to hold radio button results */
  var q = new Array();
 
+ /*Totals the scores for each house*/
 function submitQuiz(){
     var gryffindor = 0;
     var slytherin = 0;
     var hufflepuff = 0;
     var ravenclaw = 0;
-
 
 /* variable to hold answer */
 var a;
@@ -31,14 +31,13 @@ var a;
     q[3] = document.querySelector ('input[name="gem"]:checked').value;
     q[4] = document.querySelector ('input[name="path"]:checked').value;
     q[5] = document.querySelector ('input[name="instrument"]:checked').value;
-    q[6]= document.querySelector ('input[name="heirloom"]:checked').value;
+    q[6] = document.querySelector ('input[name="heirloom"]:checked').value;
     q[7] = document.querySelector ('input[name="element"]:checked').value;
     q[8] = document.querySelector ('input[name="creature"]:checked').value;
     q[9] = document.querySelector ('input[name="motto"]:checked').value;
 
     for (i = 0; i < 10; i++)
 {
-
    /* get the selected value from one group of radio buttons */
     a = q[i];
 
@@ -67,7 +66,7 @@ var a;
     }
 
 }
-/*  The for loop and switch statements above take the place of these if else's */
+/*  The for loop and switch statements above take the place of the if/else*/
 
 /*Pop-up that totals the scores for each house so learner can choose*/
 alert ("Your totals for each house are:" + 
@@ -193,29 +192,29 @@ alert ("Your totals for each house are:" +
         <!--Question 4: Gem-->
         <h3>Which gemstone would you buy?</h3>
 
-            <div class="answerBox"><!--Question 4 answerBox-->
-                <div class="button">
-                    <input type="radio" id="gem1" name="gem" value="ravenclaw" class="input-hidden">
-                    <label for="gem1"><img src="Images/Sapphire.png"></label>
-                </div><!--Closes button-->
-    
-                <div class="button">
-                    <input type="radio" id="gem2" name="gem" value="hufflepuff" class="input-hidden">
-                    <label for="gem2"><img src="Images/Citrine.png"></label>
-                </div><!--Closes button-->
-    
-                <div class="button">
-                    <input type="radio" id="gem3" name="gem" value="gryffindor" class="input-hidden">
-                    <label for="gem3"><img src="Images/Ruby.png"></label>
-                </div><!--Closes button-->
-    
-                <div class="button">
-                    <input type="radio" id="gem4" name="gem" value="slytherin" class="input-hidden">
-                    <label for="gem4"><img src="Images/Emerald.png"></label>
-                </div><!--Closes button-->
-            </div><!--Closes answerBox-->
-            
-            <hr>
+        <div class="answerBox"><!--Question 4 answerBox-->
+            <div class="button">
+                <input type="radio" id="gem1" name="gem" value="ravenclaw" class="input-hidden">
+                <label for="gem1"><img src="Images/Sapphire.png"></label>
+            </div><!--Closes button-->
+
+            <div class="button">
+                <input type="radio" id="gem2" name="gem" value="hufflepuff" class="input-hidden">
+                <label for="gem2"><img src="Images/Citrine.png"></label>
+            </div><!--Closes button-->
+
+            <div class="button">
+                <input type="radio" id="gem3" name="gem" value="gryffindor" class="input-hidden">
+                <label for="gem3"><img src="Images/Ruby.png"></label>
+            </div><!--Closes button-->
+
+            <div class="button">
+                <input type="radio" id="gem4" name="gem" value="slytherin" class="input-hidden">
+                <label for="gem4"><img src="Images/Emerald.png"></label>
+            </div><!--Closes button-->
+        </div><!--Closes answerBox-->
+        
+        <hr>
 
         <!--Question 5: Path-->
         <h3>Which path would you take?</h3>
@@ -387,9 +386,9 @@ alert ("Your totals for each house are:" +
         <hr>
 
 
-      </form>
+      </form><!--Closes quiz form-->
         
-      <button onclick="submitQuiz()">Submit</button>
+      <button onclick="submitQuiz()">Submit</button><!--Results submitted, displayed on alert-->
       
     </div> <!--Closes box1-->
   </div><!--Closes content-->

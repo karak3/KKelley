@@ -9,13 +9,13 @@
 
     <script>
 
-    /*Array that holds values for list*/
+    /*Array that holds values for lists*/
         var gryffindorNames = ["Harry Potter", " Hermione Granger", " Ron Weasley", " Albus Dumbledore", " Ginny Weasley",];
         var hufflepuffNames = ["Newt Scamander", " Pomona Sprout", " Nymphadora Tonks"," The Fat Friar", " Helga Hufflepuff",]
         var slytherinNames = ["Draco Malfoy", " Severus Snape", " Horace Slughorn"," Dolores Umbridge"," Tom Marvolo Riddle",]
         var ravenclawNames = ["Luna Lovegood", " Rowena Ravenclaw", " Filius Flitwick", " Garrick Ollivander", " Sybil Trelawney",];
     
-    /*Functions showNames creates the text string with the variables that appears once function  is executed -  prompts the user to enter their name.*/
+    /*Functions showNames creates the text string with the variables that appears once function is executed -  prompts the user to enter their name.*/
         function showGryffindor(){
             document.getElementById("Gryffindor").innerHTML = gryffindorNames;
         }
@@ -45,6 +45,7 @@
             showRavenclaw();
         }
 
+        /*Plays audio - used on same button that submits name*/
         function playAudio(url) {
             new Audio(url).play();
         }
