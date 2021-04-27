@@ -9,18 +9,40 @@ Gray: #D8D8D8
 
 /*Fonts - downloaded and uploaded into a webfont toolkit, added to GitHub to be hosted*/
 @font-face {
-  font-family: 'HarryP';
-  src: url('FontKit/HarryP.woff');
+    font-family: 'Harry P';
+    src: url('HarryP.woff2') format('woff2'),
+        url('HarryP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
-@font-face {
-  font-family: 'EBGaramond';
-  src: url('FontKit/EBGaramond.woff');
-}
+
 @font-face {
     font-family: 'Lumos';
-    src: url('FontKit/Lumos.woff');
-  }
+    src: url('Lumos.woff2') format('woff2'),
+        url('Lumos.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'Parisienne';
+    src: url('Parisienne-Regular.woff2') format('woff2'),
+        url('Parisienne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    src: url('EBGaramond.woff2') format('woff2'),
+        url('EBGaramond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /*General style areas*/
 html {
@@ -61,7 +83,10 @@ h3 {
     text-align: center;  
 
 }/*Question heading - lumos font - blue */
-
+h4 {
+    font-family: 'Parisienne';
+    font-size: 20px;
+}
 #header {
   font-family: 'HarryP';
   background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
@@ -120,6 +145,7 @@ h3 {
     color: #D8D8D8;
 }
 
+
 /*Main content - responsive box that resizes with sidebar*/
 .content {
     width: 90%;
@@ -142,56 +168,6 @@ img {
     height: 250px;
 }
 
-/*Image with text overlay*/
-.imageContainer {
-    position: relative;
-    max-width: 90%;
-    margin: 0 auto;
-}
-.imageContainer img {
-    vertical-align: middle;
-}
-.imageText {
-    position: absolute;
-    top: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #D8D8D8;
-    width: 85%;
-    padding: 20px;
-}
-
-/*Quiz content*/
-/*Box that holds pictures for quiz answers*/
-.answerBox {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2px;
-    margin: 2%;
-    align-items: center;
-    text-align: center;
-    width: 90%;
-}
-.answerBox:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-/* Hides radio buttons - don't use display: hide because it affects accessibility*/
-.input-hidden {
-    position: absolute;
-    left: -9999px;
-}
-/*Adds border around selected pictures*/
-input[type=radio]:checked +label>img {
-    border: 3px solid #9c1203;
-    box-shadow: 0 0 5px 5px #033807;
-}
-/*Sizes for images within answer boxes*/
-input[type=radio] +label>img {
-    height: 200px;
-    width: 200px;
-}
 
 /*FINISHED! - Row with 4 columns*/
 .grid1 {
@@ -246,24 +222,60 @@ input[type=radio] +label>img {
     grid-column-gap: 10px;
     margin-top: 2%;
     width: 90%;
+    height: fit-content;
 }
 .grid2 article {
     border: 1px solid #D8D8D8;
+    background-color: #9c1203;
     height: auto;
     text-align: center;
+    padding: 10px;
 }
 .grid2 aside {
-    border: 1px solid #00165e;
+    border: 1px solid #9c1203;
     background-color: #D8D8D8;
-    height: auto;
     padding: 10px;
     box-sizing: border-box;
     display: block;
     align-content: center;
     text-align: center;
+    height: fit-content;
 }
 
-/*FINISHED! - Box to hold image map - hidden on tablets and phones*/
+/*Page 2: Quiz content*/
+/*Box that holds pictures for quiz answers*/
+.answerBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    margin: 2%;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+}
+.answerBox:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Hides radio buttons - don't use display: hide because it affects accessibility*/
+.input-hidden {
+    position: absolute;
+    left: -9999px;
+}
+/*Adds border around selected pictures*/
+input[type=radio]:checked +label>img {
+    border: 3px solid #9c1203;
+    box-shadow: 0 0 5px 5px #033807;
+}
+/*Sizes for images within answer boxes*/
+input[type=radio] +label>img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/*Page 3: Box to hold image map - hidden on tablets and phones*/
 .mapBox {
     display: inline-block;
     background-color: #D8D8D8;
@@ -279,7 +291,7 @@ input[type=radio] +label>img {
     margin-bottom: 1%;
 }
 
-/*FINISHED! - Box that displays on tablets/phones instead of imagemap- 1 row, 4 columns - similar to grid1*/
+/*Page 3: Box that displays on tablets/phones instead of imagemap- 1 row, 4 columns - similar to grid1*/
 .respBox {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -301,6 +313,29 @@ input[type=radio] +label>img {
 }
 
 
+/*Styling to make image with text overlay*/
+.imageContainer {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.imageContainer img {
+    vertical-align: middle;
+}
+.imageText {
+    position: absolute;
+    top: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #D8D8D8;
+    width: 85%;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
 
 
 /*MEDIA QUERIES*/
