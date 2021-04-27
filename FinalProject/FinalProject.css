@@ -85,7 +85,7 @@ h3 {
 }/*Question heading - lumos font - blue */
 h4 {
     font-family: 'Parisienne';
-    font-size: 24px;
+    font-size: 30px;
 }
 #header {
   font-family: 'HarryP';
@@ -125,7 +125,7 @@ h4 {
     height: 100%;
     overflow: auto;
     font-family: 'HarryP';
-    font-size: 30px;
+    font-size: 40px;
 }
 /*Sidebar links*/
 .sidebar a {
@@ -180,10 +180,12 @@ img {
     width: 85%;
 }
 .grid1 div {
-	height: fit-content;
+	height: auto;
     text-align: center;
     padding: 5%;
     box-sizing: border-box;
+    font-size: 30px;
+    text-align: center;
 }
 .grid1:after {
     content: "";
@@ -203,7 +205,7 @@ img {
 }
 .box1 p {
     font-family: 'EB Garamond';
-    font-size: 20px;
+    font-size: 25px;
     color: #00165e;
     text-align: center;
     display: inside;
@@ -346,14 +348,26 @@ iframe {
 
 /*Button styling*/
 button {
-    width: 100px;
-    height: 75px;
+    width: 150px;
+    height: 100px;
     color:rgb(0, 0, 0);
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lumos';
 }
 
 button:hover{
+    background-color: #D8D8D8;
+}
+
+.button2 {
+    width: 200px;
+    height: 100px;
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Lumos';
+}
+
+.button2:hover{
     background-color: #D8D8D8;
 }
 

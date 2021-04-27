@@ -8,18 +8,30 @@
 
 <link href="FinalProject.css" rel="stylesheet" type="text/css">
 
+<script>
+/*Button commands - welcome message will be displayed when the button is clicked*/
+  function displayWelcome(){
+    document.getElementById("welcome").innerHTML = 
+    "Hogwarts School of Witchcraft and Wizadry is excited to welcome you to our school! Today you will answer some questions to see which house would be the best fit. Then, you can explore the houses amd get some words of wisdoms from former students. Finally, you will choose your house. Let's get started!"
+  }
+
+  const audio = new Audio("Sounds/Theme.mp3");
+
+</script>
+
 </head>
 
 <body>
   <div id="header">
-    Welcome to Hogwarts!
+    Hogwarts School of Witchcraft and Wizardry
   </div> <!--Closes header-->
 
   <div class="sidebar"> <!--Sidebar navigation - on tablets will move to top, on phones will stack vertically-->
-      <a class='active' href="FinalProject1.html">Page 1</a>
-      <a href="FinalProject2.html">Page 2</a>
-      <a href="FinalProject3.html">Page 3</a>
-      <a href="FinalProject4.html">Page 4</a>
+      <a class='active' href="FinalProject1.html">Home</a>
+      <a href="FinalProject2.html">Quiz</a>
+      <a href="FinalProject3.html">Houses</a>
+      <a href="FinalProject4.html">Quotes</a>
+      <a href="FinalProject5.html">Choose</a>
   </div><!--Closes sidebar-->
 
   <div class="content"> <!--Main Page Content-->
@@ -28,9 +40,9 @@
       
       <img src="Images/Welcomeimage.gif" alt="Welcome gif">
       
-      <h2 style="color: #9c1203">Heading</h2>
-      
-      <p>Enter overview </p>
+      <h1 style="color: #9c1203">Welcome to Hogwarts!</h1>
+      <button type="button" class="button2" onclick="displayWelcome(); audio.play();">Click here</button>
+      <p id="welcome"></p>
 
     </div><!--Closes box1-->
 
