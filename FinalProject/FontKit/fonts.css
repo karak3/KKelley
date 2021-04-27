@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Harry P';
-    src: url('HarryP.woff2') format('woff2'),
-        url('HarryP.woff') format('woff');
+    src: url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/HARRYP__.TTF') format('ttf'),
+        url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/HarryP.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Lumos';
-    src: url('Lumos.woff2') format('woff2'),
-        url('Lumos.woff') format('woff');
+    src: url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/Lumos.woff') format('woff'),
+        url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/LUMOS.TTF') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Parisienne';
-    src: url('Parisienne-Regular.woff2') format('woff2'),
-        url('Parisienne-Regular.woff') format('woff');
+    src: url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/Parisienne-Regular.woff') format('woff'),
+        url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/Parisienne-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'EB Garamond';
-    src: url('EBGaramond.woff2') format('woff2'),
-        url('EBGaramond.woff') format('woff');
+    src: url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/EBGaramond.otf') format('otf'),
+        url('https://github.com/karak3/WebProgramming1/blob/bb550c2ee6786ada199d8c0cfac28cab7577e6bd/FinalProject/FontKit/EBGaramond.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
