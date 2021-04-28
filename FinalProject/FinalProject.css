@@ -7,7 +7,7 @@ Slytherin Green: #033807 rgb(3, 56, 7)
 Gray: #D8D8D8
 */
 
-/*Fonts - downloaded and uploaded into a webfont toolkit, added to GitHub to be hosted*/
+/*NOTWORKING - downloaded and uploaded into a webfont toolkit, added to GitHub to be hosted - 
 @font-face {
     font-family: 'Harry P';
     src: url(/FinalProject/FontKit/HARRYP__.TTF);
@@ -43,10 +43,15 @@ Gray: #D8D8D8
     font-style: normal;
     font-display: swap;
 }
+*/
+/*Google fonts
+font-family: 'EB Garamond', serif;
+font-family: 'IM Fell English SC', serif;
+font-family: 'Mountains of Christmas', cursive;
+font-family: 'Parisienne', cursive;
+*/
 
-
-
-
+  
 
 /*General style areas*/
 html {
@@ -61,7 +66,7 @@ body {
     background-position: center;
 }
 p {
-  font-family: 'EBGaramond';
+  font-family: 'EB Garamond';
   font-size: 20px;
   color: #D8D8D8;
   text-align: justify;
@@ -69,20 +74,20 @@ p {
   overflow-wrap: normal;
 }
 h1 {
-  font-family: 'HarryP';
+  font-family: 'IM Fell English SC'; /*Was Harry P*/
   font-size: 60px;
   color: #D8D8D8;
   text-align: center;
 }/*Heading at top of pages*/
 h2 {
-  font-family: 'Lumos';
-  font-size: 30px;
+  font-family: 'Mountains of Christmas'; /*Was Lumos*/
+  font-size: 35px;
   color: #D8D8D8;
   text-align: center;  
 }/*Smaller Heading - Lumos font - gray*/
 h3 {
-    font-family: 'Lumos';
-    font-size: 40px;
+    font-family: 'Mountains of Christmas'; /*Was Lumos*/
+    font-size: 50px;
     color: #00165e;
     text-align: center;  
 
@@ -92,14 +97,15 @@ h4 {
     font-size: 30px;
 }
 #header {
-  font-family: 'HarryP';
-  background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
-  font-size: 80px;
-  color: #D8D8D8;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 100%;
+    background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#header img {
+    width: 700px;
+    height: 150px;
 }
 #footer {
     background-image: linear-gradient(to right, rgb(156, 18, 3), rgb(227, 160, 0),rgb(3, 56, 7),rgb(0, 22, 94));
@@ -108,7 +114,7 @@ h4 {
     padding: 10px;
 }
 #footer a {
-    font-family: 'Lumos';
+    font-family: 'Mountains of Christmas'; /*was Lumos*/
     color: #D8D8D8;
     font-size: 20px;
 }
@@ -128,8 +134,8 @@ h4 {
     position: fixed;
     height: 100%;
     overflow: auto;
-    font-family: 'HarryP';
-    font-size: 40px;
+    font-family: 'IM Fell English SC'; /*Was Harry P*/
+    font-size: 20px;
 }
 /*Sidebar links*/
 .sidebar a {
@@ -152,7 +158,7 @@ h4 {
 
 /*Main content - responsive box that resizes with sidebar*/
 .content {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     align-content: center;
     height: 100%;
@@ -246,10 +252,10 @@ img {
     text-align: center;
     height: fit-content;
 }
-.grid2 a {
+.grid2 a { 
     color:black;
-    font-family: 'HarryP';
-    font-size: 50px;
+    font-family: 'IM Fell English SC';
+    font-size: 40px;
     cursor: pointer;
 }
 
@@ -356,7 +362,7 @@ button {
     height: 100px;
     color:rgb(0, 0, 0);
     font-size: 20px;
-    font-family: 'Lumos';
+    font-family: 'Mountains of Christmas';
 }
 
 button:hover{
@@ -368,7 +374,7 @@ button:hover{
     height: 100px;
     color:rgb(0, 0, 0);
     font-size: 30px;
-    font-family: 'Lumos';
+    font-family: 'Mountains of Christmas';
 }
 
 .button2:hover{
@@ -388,6 +394,9 @@ button:hover{
         width: 100%;
         height: 50%;
         font-size: 50px;
+    }
+    #header img {
+        width: 300px;
     }
 
     #footer {
@@ -454,6 +463,9 @@ button:hover{
         width: 100%;
         height: 75%;
         font-size: 70px;
+    }
+    #header img {
+        width: 80%;
     }
 
     #footer {
