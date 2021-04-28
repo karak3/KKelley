@@ -187,15 +187,17 @@ img {
 	margin: 2%;
     float: left;
     align-content: center;
-    width: 75%;
+    width: 80%;
+    height:fit-content;
 }
 .grid1 div {
-	height: auto;
     text-align: center;
     padding: 5%;
     box-sizing: border-box;
     font-size: 30px;
     text-align: center;
+    height: fit-content;
+    width:fit-content;
 }
 .grid1:after {
     content: "";
@@ -474,12 +476,11 @@ button:hover{
         width: 100%;
         height: 75%;
     }
-/*Makes grid 2x2 instead of 1x4*/
+/*Makes grid smaller*/
     .grid1, .grid2, .respBox {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        vertical-align: middle;
+        display: block;
         width: 100%;
+        height: auto;
     }
     .grid1, .grid2, .respBox div {
         text-align: center;
