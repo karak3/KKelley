@@ -174,8 +174,8 @@ div.content {
     height: 100%;
 }
 img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -211,7 +211,7 @@ img {
     margin: 2%;
     padding: 10px;
     text-align: center;
-    width: 85%;
+    width: 90%;
 }
 .box1 p {
     font-family: 'EB Garamond';
