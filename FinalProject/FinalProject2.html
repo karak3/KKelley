@@ -40,8 +40,8 @@ var a;
     q[8] = document.querySelector ('input[name="creature"]:checked').value;
     q[9] = document.querySelector ('input[name="motto"]:checked').value;
 
-    for (i = 0; i < 10; i++)
-{
+
+    for (i = 0; i < 10; i++) {
    /* get the selected value from one group of radio buttons */
     a = q[i];
 
@@ -70,7 +70,21 @@ var a;
     }
 
 }
-/*  The for loop and switch statements above take the place of the if/else*/
+/*  The for loop and switch statements above take the place of the if/else
+if (q1 == "gryffindor"){
+gryffindor = gryffindor + 1;  Adds 1 point to gryffindor if it's selected -- shortcut: gryffindor += 1;
+}
+else if (q1 == "slytherin"){
+slytherin += 1;
+
+}
+else if (q1 == "hufflepuff"){
+hufflepuff += 1;
+
+}
+else if (q1 == "ravenclaw"){
+ravenclaw += 1;
+}*/
 
 /*Pop-up that totals the scores for each house so learner can choose*/
 alert ("Your totals for each house are:" + 
